@@ -110,7 +110,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   height: clamp(600px, 88vh, 760px);
   position: relative;
   top: 0;
-  z-index: 5;
+  z-index: 1;
   display: grid;
   place-items: center;
   position: sticky;
@@ -164,7 +164,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 /* “Szürke sáv” + about layout */
 .band{
   position: relative;
-  z-index: 2;
+  z-index: 4;
   margin-top: -112px;
   background: #e6e6e6;
   padding: 0 0 calc(var(--space-section) + 6px);
