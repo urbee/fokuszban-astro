@@ -43,7 +43,7 @@ header{
   align-items: center;
   row-gap: 6px;
   column-gap: 28px;
-  padding: 20px 0 16px;
+  padding: 24px 0 20px;
 }
 .brand{
   grid-area: brand;
@@ -94,6 +94,7 @@ header{
   border-bottom-color: rgba(31,111,111,.9);
 }
 main{ padding: 34px 0 56px; }
+main.main-full{ padding-top: 0; }
 footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted); font-size: 14px; }
 .prose img{ max-width: 100%; height: auto; border-radius: 10px; }
 .prose h1{ margin-top: 0; }
