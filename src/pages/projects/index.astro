@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const events = (await getCollection("events"))
+  .sort((a,b) => a.data.title.localeCompare(b.data.title));
+---
+
+<BaseLayout title="Aktuális csoportok">
+  <div class="prose">
+    <h1>Aktuális csoportok</h1>
+    <p>Itt találod az aktuális csoportokat és eseményeket.</p>
+  </div>
+
+  <div class="cards">
+    {events.map((e) => (
+      <a class="card" href={`/projects/${e.slug}`} style="text-decoration:none;">
+        {e.data.image ? <img src={e.data.image} alt={e.data.imageAlt ?? e.data.title} loading="lazy" /> : null}
+        <h3 style="margin:10px 0 6px;">{e.data.title}</h3>
+        <div class="meta">{e.data.summary ?? ""}</div>
+        <div class="small" style="margin-top:10px;">Megnyitás →</div>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

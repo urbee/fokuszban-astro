@@ -1,0 +1,26 @@
+---
+const nav = [
+  { href: "/", label: "Főoldal" },
+  { href: "/melinda", label: "Rólam" },
+  { href: "/fokuszolas", label: "Fókuszolás" },
+  { href: "/szolgaltatasok", label: "Szolgáltatások" },
+  { href: "/projects", label: "Aktuális" },
+  { href: "https://fokuszfeszek.blogspot.com/", label: "Blog" },
+];
+const logoUrl = "https://static.wixstatic.com/media/162124_a2f2db100bb64119ae9091c982e814b9~mv2.png/v1/fill/w_71,h_71,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo_circles_adjusted_transparent.png";
+---
+<header>
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="/">
+        <img src={logoUrl} alt="FókuszBAN logo" loading="eager" />
+        <strong>FókuszBAN</strong>
+      </a>
+      <nav class="navlinks" aria-label="Fő navigáció">
+        {nav.map((item) => (
+          <a href={item.href}>{item.label}</a>
+        ))}
+      </nav>
+    </div>
+  </div>
+</header>

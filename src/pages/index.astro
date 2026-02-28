@@ -1,0 +1,88 @@
+---
+import FullWidthLayout from "../layouts/FullWidthLayout.astro";
+
+const HERO_BG =
+  "https://static.wixstatic.com/media/162124_03517a6cebc1431c9b0d26f570b786e1~mv2.jpg/v1/fill/w_980,h_643,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/162124_03517a6cebc1431c9b0d26f570b786e1~mv2.jpg";
+
+const PORTRAIT =
+  "https://static.wixstatic.com/media/162124_05ddbac1625b4c60b1318bd5b7b5ac97~mv2.jpg/v1/fill/w_857,h_939,al_l,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/162124_05ddbac1625b4c60b1318bd5b7b5ac97~mv2.jpg";
+
+const SERVICES = [
+  {
+    title: "Fókuszolás tanítás",
+    subtitle: "egyéni",
+    href: "/about-6",
+    img: "https://static.wixstatic.com/media/162124_34b9af50c29c4803b61935e570feee6e~mv2.jpg/v1/crop/x_0,y_0,w_791,h_633/fill/w_288,h_209,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/kapu_filter.jpg",
+  },
+  {
+    title: "Mentálhigiénés segítő beszélgetés",
+    subtitle: "egyéni / pár / család",
+    href: "/about-6-1",
+    img: "https://static.wixstatic.com/media/162124_ebdf5ec04f60479480bec76300a15a16~mv2.jpg/v1/crop/x_0,y_38,w_1064,h_851/fill/w_288,h_209,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/beech-3385957_1280.jpg",
+  },
+  {
+    title: "Csoportos önismereti",
+    subtitle: "fókuszolás csoport",
+    href: "/about-6-2",
+    img: "https://static.wixstatic.com/media/162124_b1c5e9b6081547e09dacab5f0cf12bd7~mv2.jpg/v1/crop/x_107,y_0,w_1066,h_853/fill/w_288,h_209,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nature-1157480_1280.jpg",
+  },
+];
+---
+
+<FullWidthLayout title="Fókuszban">
+  <!-- HERO -->
+  <section class="hero" style={`--hero-bg: url(${HERO_BG});`}>
+    <div class="hero-inner">
+      <h1 class="hero-title">FÓKUSZBAN</h1>
+      <div class="hero-sub">Kapcsolatban önmagaddal, kapcsolatban másokkal</div>
+      <div class="hero-quote">
+        “A fókuszolás egy önismereti módszer, amely segít a bennünk zajló folyamatok tudatosításában és hozzájárul a belső egyensúly eléréséhez.”
+      </div>
+    </div>
+  </section>
+
+  <!-- “SZÜRKE SÁV” + ABOUT -->
+  <section class="band">
+    <div class="container home-about">
+      <div class="about-image">
+        <img src={PORTRAIT} alt="dr. Koskocsák Melinda" loading="eager" />
+      </div>
+
+      <div class="about-card">
+        <h2>DR. KOSKOCSÁK MELINDA</h2>
+        <div class="about-meta">
+          <div>Mentálhigiénés szakember</div>
+          <div>Pszichológushallgató (Károli Gáspár Református Egyetem)</div>
+          <div>Fókusztréner</div>
+          <div>OH kártya instruktor</div>
+          <div>Jogász, volt polgári bíró</div>
+        </div>
+
+        <p class="about-text">
+          Korábban polgári vagyonjogi bíróként dolgoztam, de idővel egyre inkább a személyes, emberi kapcsolódás vált fontossá számomra.
+          Ez a belső irányváltás vezetett a segítői hivatáshoz, amelyben fókusztrénerként, mentálhigiénés segítőként és OH-kártya instruktorként
+          kísérek egyéni és csoportos önismereti folyamatokat.
+        </p>
+
+        <a class="btn" href="/melinda">További információk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="container services">
+    <h2 class="section-title">SZOLGÁLTATÁSOK</h2>
+    <div class="services-grid">
+      {SERVICES.map((s) => (
+        <a class="service-card" href={s.href}>
+          <img src={s.img} alt={s.title} loading="lazy" />
+          <div class="service-body">
+            <div class="service-title">{s.title}</div>
+            <div class="service-sub">{s.subtitle}</div>
+            <div class="service-cta">Bővebben →</div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</FullWidthLayout>

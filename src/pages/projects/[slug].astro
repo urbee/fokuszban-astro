@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const events = await getCollection("events");
+  return events.map((e) => ({
+    params: { slug: e.slug },
+    props: { event: e },
+  }));
+}
+
+const { event } = Astro.props;
+const { Content } = await event.render();
+---
+
+<BaseLayout title={event.data.title}>
+  {event.data.image ? (
+    <img src={event.data.image} alt={event.data.imageAlt ?? event.data.title} loading="lazy" />
+  ) : null}
+
+  <h1>{event.data.title}</h1>
+
+  {event.data.summary ? <p class="meta">{event.data.summary}</p> : null}
+
+  <Content />
+
+  {event.data.wixDetailsUrl ? (
+    <p class="small">Régi Wix link: <a href={event.data.wixDetailsUrl}>{event.data.wixDetailsUrl}</a></p>
+  ) : null}
+</BaseLayout>
