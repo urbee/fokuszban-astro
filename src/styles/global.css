@@ -110,7 +110,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   height: clamp(600px, 88vh, 760px);
   position: relative;
   top: 0;
-  z-index: 1;
+  z-index: 5;
   display: grid;
   place-items: center;
   position: sticky;
@@ -133,7 +133,8 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   margin: 0 auto;
   padding: 0 24px;
   text-align: center;
-  transform: translateY(-102px);
+  transform: translateY(var(--hero-text-y, -102px));
+  will-change: transform, opacity;
 }
 .hero-title{
   margin: 0 0 14px;
@@ -163,7 +164,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 /* “Szürke sáv” + about layout */
 .band{
   position: relative;
-  z-index: 3;
+  z-index: 2;
   margin-top: -112px;
   background: #e6e6e6;
   padding: 0 0 calc(var(--space-section) + 6px);
@@ -303,7 +304,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   }
   .hero-inner{
     padding: 0 20px;
-    transform: translateY(-54px);
+    transform: translateY(var(--hero-text-y, -54px));
   }
   .hero-title{
     letter-spacing: 0.1em;

@@ -86,3 +86,42 @@ const SERVICES = [
     </div>
   </section>
 </FullWidthLayout>
+
+<script is:inline>
+  (() => {
+    const hero = document.querySelector(".hero");
+    const heroInner = document.querySelector(".hero-inner");
+    if (!hero || !heroInner) return;
+
+    const isMobile = () => window.matchMedia("(max-width: 900px)").matches;
+    let startScrollY = 0;
+
+    let ticking = false;
+    const recalcStart = () => {
+      const rect = hero.getBoundingClientRect();
+      startScrollY = window.scrollY + rect.top;
+    };
+
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+
+      requestAnimationFrame(() => {
+        const passed = Math.max(window.scrollY - startScrollY, 0);
+        const speed = isMobile() ? 0.34 : 0.38;
+        const shift = passed * speed;
+        const base = isMobile() ? -54 : -102;
+        heroInner.style.setProperty("--hero-text-y", `${base - shift}px`);
+        ticking = false;
+      });
+    };
+
+    recalcStart();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", () => {
+      recalcStart();
+      onScroll();
+    });
+    onScroll();
+  })();
+</script>
