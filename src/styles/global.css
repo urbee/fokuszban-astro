@@ -28,28 +28,65 @@ h4,h5,h6{
 a{ color:inherit; text-decoration:underline; text-underline-offset: 2px; }
 a:hover{ opacity:.85; }
 .container{ max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad); }
-header{ border-bottom:1px solid var(--border); background:#fff; position: sticky; top:0; z-index: 10; }
-.nav{ display:flex; align-items:center; justify-content:space-between; min-height: 72px; gap: 20px; }
-.brand{ display:flex; align-items:center; gap: 11px; text-decoration:none; font-size: 20px; letter-spacing: 0.08em; font-weight: 600; }
-.brand img{ width:37px; height:37px; object-fit:contain; }
-.navlinks{ display:flex; flex-wrap:wrap; align-items: center; gap: 20px; font-size: 13px; letter-spacing: 0.015em; }
+header{ border-bottom:1px solid var(--border); background:#fff; }
+.nav{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "brand links"
+    "tagline links";
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 28px;
+  padding: 20px 0 16px;
+}
+.brand{
+  grid-area: brand;
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  text-decoration:none;
+  font-size: 20px;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+}
+.brand img{ width:42px; height:42px; object-fit:contain; }
+.brand-tagline{
+  grid-area: tagline;
+  padding-left: 54px;
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  color: #2a2a2a;
+  text-transform: uppercase;
+}
+.navlinks{
+  grid-area: links;
+  justify-self: end;
+  display:flex;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  font-size: 14px;
+  letter-spacing: 0.005em;
+}
 .navlinks a{
   text-decoration: none;
   color: #2c2c2c;
   line-height: 1;
-  padding: 7px 0;
-  border-bottom: 1px solid transparent;
+  padding: 7px 0 5px;
+  border-bottom: 1px solid rgba(31,111,111,0);
   transition: color .15s ease, border-color .15s ease;
 }
 .navlinks a:hover{
   color: #1f6f6f;
-  border-bottom-color: rgba(31,111,111,.42);
+  border-bottom-color: rgba(31,111,111,.38);
   opacity: 1;
 }
 .navlinks a.is-active,
 .navlinks a[aria-current="page"]{
   color: #1f6f6f;
-  border-bottom-color: #1f6f6f;
+  border-bottom-color: rgba(31,111,111,.9);
 }
 main{ padding: 34px 0 56px; }
 footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted); font-size: 14px; }
@@ -203,15 +240,30 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 
 @media (max-width: 900px){
   .nav{
-    min-height: 64px;
-    padding: 8px 0;
-    align-items: flex-start;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "brand"
+      "tagline"
+      "links";
+    row-gap: 10px;
+    padding: 12px 0 10px;
   }
   .brand{
     font-size: 18px;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.08em;
+  }
+  .brand img{
+    width: 34px;
+    height: 34px;
+  }
+  .brand-tagline{
+    padding-left: 46px;
+    font-size: 12px;
+    letter-spacing: 0.14em;
   }
   .navlinks{
+    justify-self: start;
+    justify-content: flex-start;
     gap: 12px;
     font-size: 12px;
   }
