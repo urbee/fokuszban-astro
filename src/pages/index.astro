@@ -87,31 +87,35 @@ const SERVICES = [
   </section>
 </FullWidthLayout>
 
-<script is:inline>
-  (() => {
-    const hero = document.querySelector(".hero");
-    if (!hero) return;
+<script>
+  import { computeHeroMotion, computeHeroProgress } from "../utils/heroMotion.js";
 
+  const hero = document.querySelector(".hero");
+  if (hero) {
     let ticking = false;
-    const setProgress = () => {
+
+    const applyMotion = () => {
       const rect = hero.getBoundingClientRect();
-      // Linear progress over the hero's own travel distance.
-      // This avoids "static then sudden jump" when hero height ~= viewport.
-      const travel = Math.max(rect.height * 0.9, 1);
-      const passed = Math.min(Math.max(-rect.top, 0), travel);
-      const progress = Math.min(Math.max(passed / travel, 0), 1);
-      hero.style.setProperty("--hero-progress", progress.toFixed(4));
+      const progress = computeHeroProgress(rect.top, rect.height);
+      const motion = computeHeroMotion(progress);
+
+      hero.style.setProperty("--hero-progress", motion.progress.toFixed(4));
+      hero.style.setProperty("--hero-media-y", `${motion.mediaY.toFixed(2)}px`);
+      hero.style.setProperty("--hero-text-y", `${motion.textY.toFixed(2)}px`);
+      hero.style.setProperty("--hero-text-opacity", motion.textOpacity.toFixed(4));
+      hero.style.setProperty("--hero-band-y", `${motion.bandY.toFixed(2)}px`);
+      hero.style.setProperty("--hero-band-opacity", motion.bandOpacity.toFixed(4));
       ticking = false;
     };
 
     const onScroll = () => {
       if (ticking) return;
       ticking = true;
-      requestAnimationFrame(setProgress);
+      requestAnimationFrame(applyMotion);
     };
 
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onScroll);
-    setProgress();
-  })();
+    applyMotion();
+  }
 </script>
