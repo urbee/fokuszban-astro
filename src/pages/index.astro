@@ -110,7 +110,7 @@ const SERVICES = [
         const passed = Math.max(window.scrollY - startScrollY, 0);
         const speed = isMobile() ? 0.34 : 0.38;
         const shift = passed * speed;
-        const base = isMobile() ? -54 : -102;
+        const base = isMobile() ? -70 : -130;
         heroInner.style.setProperty("--hero-text-y", `${base - shift}px`);
         ticking = false;
       });
