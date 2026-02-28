@@ -43,7 +43,7 @@ header{
   align-items: center;
   row-gap: 6px;
   column-gap: 28px;
-  padding: 24px 0 20px;
+  padding: 30px 0 26px;
 }
 .brand{
   grid-area: brand;
@@ -133,7 +133,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   margin: 0 auto;
   padding: 0 24px;
   text-align: center;
-  transform: translateY(-68px);
+  transform: translateY(-102px);
 }
 .hero-title{
   margin: 0 0 14px;
@@ -303,7 +303,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   }
   .hero-inner{
     padding: 0 20px;
-    transform: translateY(-38px);
+    transform: translateY(-54px);
   }
   .hero-title{
     letter-spacing: 0.1em;
