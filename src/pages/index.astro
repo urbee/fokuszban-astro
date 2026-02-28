@@ -34,15 +34,15 @@ const SERVICES = [
       <h1 class="hero-title">FÓKUSZBAN</h1>
       <div class="hero-sub">Kapcsolatban önmagaddal, kapcsolatban másokkal</div>
     </div>
-    <div class="hero-quote-band">
-      <div class="hero-quote">
-        "A fókuszolás egy önismereti módszer, amely segít a bennünk zajló folyamatok tudatosításában és hozzájárul a belső egyensúly eléréséhez."
-      </div>
-    </div>
   </section>
 
   <!-- “SZÜRKE SÁV” + ABOUT -->
   <section class="band">
+    <div class="intro-quote-band">
+      <div class="hero-quote">
+        "A fókuszolás egy önismereti módszer, amely segít a bennünk zajló folyamatok tudatosításában és hozzájárul a belső egyensúly eléréséhez."
+      </div>
+    </div>
     <div class="container home-about">
       <div class="about-image">
         <img src={PORTRAIT} alt="dr. Koskocsák Melinda" loading="eager" />
@@ -86,36 +86,3 @@ const SERVICES = [
     </div>
   </section>
 </FullWidthLayout>
-
-<script>
-  import { computeHeroMotion, computeHeroProgress } from "../utils/heroMotion.js";
-
-  const hero = document.querySelector(".hero");
-  if (hero) {
-    let ticking = false;
-
-    const applyMotion = () => {
-      const rect = hero.getBoundingClientRect();
-      const progress = computeHeroProgress(rect.top, rect.height);
-      const motion = computeHeroMotion(progress);
-
-      hero.style.setProperty("--hero-progress", motion.progress.toFixed(4));
-      hero.style.setProperty("--hero-media-y", `${motion.mediaY.toFixed(2)}px`);
-      hero.style.setProperty("--hero-text-y", `${motion.textY.toFixed(2)}px`);
-      hero.style.setProperty("--hero-text-opacity", motion.textOpacity.toFixed(4));
-      hero.style.setProperty("--hero-band-y", `${motion.bandY.toFixed(2)}px`);
-      hero.style.setProperty("--hero-band-opacity", motion.bandOpacity.toFixed(4));
-      ticking = false;
-    };
-
-    const onScroll = () => {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(applyMotion);
-    };
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll);
-    applyMotion();
-  }
-</script>
