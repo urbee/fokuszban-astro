@@ -106,10 +106,13 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 
 /* Hero */
 .hero{
-  background: var(--hero-bg) center center / cover no-repeat;
+  background:
+    url("https://static.wixstatic.com/media/162124_03517a6cebc1431c9b0d26f570b786e1~mv2.jpg/v1/fill/w_1718,h_1074,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/162124_03517a6cebc1431c9b0d26f570b786e1~mv2.jpg")
+    center center / cover no-repeat;
   min-height: 500px;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   isolation: isolate;
 }
@@ -118,7 +121,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   content:"";
   position:absolute; inset:0;
   background:
-    linear-gradient(180deg, rgba(255,255,255,.54) 0%, rgba(255,255,255,.34) 44%, rgba(255,255,255,.46) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.24) 0%, rgba(255,255,255,.12) 45%, rgba(255,255,255,.2) 100%);
 }
 
 .hero-inner{
@@ -126,7 +129,9 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   z-index: 1;
   width: min(980px, 100%);
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 24px;
+  text-align: center;
+  transform: translateY(-30px);
 }
 .hero-title{
   margin: 0 0 14px;
@@ -146,7 +151,9 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   font-size: 14px;
   line-height: 1.6;
   color: #2d2d2d;
-  max-width: 730px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* “Szürke sáv” + about layout */
@@ -277,6 +284,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   }
   .hero-inner{
     padding: 0 24px;
+    transform: translateY(-12px);
   }
   .hero-title{
     letter-spacing: 0.1em;
