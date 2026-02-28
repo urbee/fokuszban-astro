@@ -29,11 +29,14 @@ const SERVICES = [
 <FullWidthLayout title="Fókuszban">
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-media" aria-hidden="true"></div>
     <div class="hero-inner">
       <h1 class="hero-title">FÓKUSZBAN</h1>
       <div class="hero-sub">Kapcsolatban önmagaddal, kapcsolatban másokkal</div>
+    </div>
+    <div class="hero-quote-band">
       <div class="hero-quote">
-        “A fókuszolás egy önismereti módszer, amely segít a bennünk zajló folyamatok tudatosításában és hozzájárul a belső egyensúly eléréséhez.”
+        "A fókuszolás egy önismereti módszer, amely segít a bennünk zajló folyamatok tudatosításában és hozzájárul a belső egyensúly eléréséhez."
       </div>
     </div>
   </section>
@@ -83,3 +86,31 @@ const SERVICES = [
     </div>
   </section>
 </FullWidthLayout>
+
+<script is:inline>
+  (() => {
+    const hero = document.querySelector(".hero");
+    if (!hero) return;
+
+    let ticking = false;
+    const setProgress = () => {
+      const rect = hero.getBoundingClientRect();
+      const viewport = window.innerHeight || 1;
+      const scrollable = Math.max(rect.height - viewport, 1);
+      const passed = Math.min(Math.max(-rect.top, 0), scrollable);
+      const progress = Math.min(Math.max(passed / scrollable, 0), 1);
+      hero.style.setProperty("--hero-progress", progress.toFixed(4));
+      ticking = false;
+    };
+
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(setProgress);
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    setProgress();
+  })();
+</script>

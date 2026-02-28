@@ -106,32 +106,34 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 
 /* Hero */
 .hero{
-  background:
-    url("https://static.wixstatic.com/media/162124_03517a6cebc1431c9b0d26f570b786e1~mv2.jpg/v1/fill/w_1718,h_1074,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/162124_03517a6cebc1431c9b0d26f570b786e1~mv2.jpg")
-    center center / cover no-repeat;
-  min-height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  --hero-progress: 0;
+  height: clamp(680px, 125vh, 960px);
   position: relative;
   isolation: isolate;
+  overflow: hidden;
 }
-
-.hero::before{
-  content:"";
-  position:absolute; inset:0;
+.hero-media{
+  position: absolute;
+  inset: 0;
   background:
-    linear-gradient(180deg, rgba(255,255,255,.24) 0%, rgba(255,255,255,.12) 45%, rgba(255,255,255,.2) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,.08) 42%, rgba(255,255,255,.18) 100%),
+    url("https://static.wixstatic.com/media/162124_03517a6cebc1431c9b0d26f570b786e1~mv2.jpg/v1/fill/w_1718,h_1074,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/162124_03517a6cebc1431c9b0d26f570b786e1~mv2.jpg")
+      center center / cover no-repeat;
+  transform: translateY(calc(var(--hero-progress) * 38px)) scale(1.03);
+  will-change: transform;
 }
 
 .hero-inner{
   position: relative;
-  z-index: 1;
+  z-index: 2;
   width: min(980px, 100%);
-  margin: 0 auto;
+  margin: 0 auto auto;
   padding: 0 24px;
   text-align: center;
-  transform: translateY(-30px);
+  top: 22%;
+  transform: translateY(calc(-34px + (var(--hero-progress) * -180px)));
+  opacity: calc(1 - (var(--hero-progress) * 1.35));
+  will-change: transform, opacity;
 }
 .hero-title{
   margin: 0 0 14px;
@@ -146,14 +148,31 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   letter-spacing: 0.22em;
   color: #2d2d2d;
 }
+.hero-quote-band{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 14%;
+  z-index: 3;
+  background: rgba(178,182,184,.66);
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 28px;
+  transform: translateY(calc((1 - var(--hero-progress)) * 130px));
+  opacity: calc((var(--hero-progress) - 0.16) * 2);
+  will-change: transform, opacity;
+}
 .hero-quote{
-  margin-top: 20px;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #2d2d2d;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.5;
+  color: #eef1f1;
+  max-width: 860px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
 }
 
 /* “Szürke sáv” + about layout */
@@ -280,11 +299,13 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
     font-size: 12px;
   }
   .hero{
-    min-height: 420px;
+    height: 86vh;
+    min-height: 500px;
   }
   .hero-inner{
     padding: 0 24px;
-    transform: translateY(-12px);
+    top: 17%;
+    transform: translateY(calc(-16px + (var(--hero-progress) * -120px)));
   }
   .hero-title{
     letter-spacing: 0.1em;
@@ -293,9 +314,14 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
     font-size: 12px;
     letter-spacing: 0.16em;
   }
+  .hero-quote-band{
+    bottom: 10%;
+    min-height: 88px;
+    padding: 14px 18px;
+  }
   .hero-quote{
-    font-size: 13px;
-    margin-top: 14px;
+    font-size: 20px;
+    line-height: 1.45;
   }
   .home-about{
     grid-template-columns: 1fr;
