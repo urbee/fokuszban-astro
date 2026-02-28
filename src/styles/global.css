@@ -120,10 +120,9 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(255,255,255,.14) 0%, rgba(255,255,255,.06) 45%, rgba(255,255,255,.14) 100%),
     url("https://static.wixstatic.com/media/162124_03517a6cebc1431c9b0d26f570b786e1~mv2.jpg/v1/fill/w_1718,h_1074,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/162124_03517a6cebc1431c9b0d26f570b786e1~mv2.jpg")
       center center / cover no-repeat;
-  transform: scale(1.03);
+  transform: none;
 }
 
 .hero-inner{
@@ -133,19 +132,20 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   margin: 0 auto;
   padding: 0 24px;
   text-align: center;
-  transform: translateY(-36px);
+  transform: translateY(-68px);
 }
 .hero-title{
   margin: 0 0 14px;
   font-size: clamp(2.3rem, 5.3vw, 4.4rem);
   line-height: 1.03;
   letter-spacing: 0.18em;
+  font-weight: 800;
   color: #111;
 }
 .hero-sub{
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.22em;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  font-weight: 500;
   color: #2d2d2d;
 }
 .hero-quote{
@@ -302,7 +302,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   }
   .hero-inner{
     padding: 0 20px;
-    transform: translateY(-18px);
+    transform: translateY(-38px);
   }
   .hero-title{
     letter-spacing: 0.1em;
