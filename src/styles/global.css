@@ -29,10 +29,28 @@ a{ color:inherit; text-decoration:underline; text-underline-offset: 2px; }
 a:hover{ opacity:.85; }
 .container{ max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad); }
 header{ border-bottom:1px solid var(--border); background:#fff; position: sticky; top:0; z-index: 10; }
-.nav{ display:flex; align-items:center; justify-content:space-between; padding: 12px 0; gap: 12px; }
-.brand{ display:flex; align-items:center; gap: 10px; text-decoration:none; }
-.brand img{ width:34px; height:34px; object-fit:contain; }
-.navlinks{ display:flex; flex-wrap:wrap; gap: 16px; font-size: 13px; letter-spacing: 0.02em; }
+.nav{ display:flex; align-items:center; justify-content:space-between; min-height: 72px; gap: 20px; }
+.brand{ display:flex; align-items:center; gap: 11px; text-decoration:none; font-size: 20px; letter-spacing: 0.08em; font-weight: 600; }
+.brand img{ width:37px; height:37px; object-fit:contain; }
+.navlinks{ display:flex; flex-wrap:wrap; align-items: center; gap: 20px; font-size: 13px; letter-spacing: 0.015em; }
+.navlinks a{
+  text-decoration: none;
+  color: #2c2c2c;
+  line-height: 1;
+  padding: 7px 0;
+  border-bottom: 1px solid transparent;
+  transition: color .15s ease, border-color .15s ease;
+}
+.navlinks a:hover{
+  color: #1f6f6f;
+  border-bottom-color: rgba(31,111,111,.42);
+  opacity: 1;
+}
+.navlinks a.is-active,
+.navlinks a[aria-current="page"]{
+  color: #1f6f6f;
+  border-bottom-color: #1f6f6f;
+}
 main{ padding: 34px 0 56px; }
 footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted); font-size: 14px; }
 .prose img{ max-width: 100%; height: auto; border-radius: 10px; }
@@ -43,9 +61,6 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 .card img{ width:100%; height:160px; object-fit: cover; border-radius: 10px; border:1px solid var(--border); }
 .meta{ color: var(--muted); font-size: 14px; }
 .small{ font-size: 13px; color: var(--muted); }
-
-/* Navbar: Wix-szerűbb (ne legyen aláhúzott menü) */
-.navlinks a { text-decoration: none; }
 
 /* Hero */
 .hero{
@@ -161,6 +176,19 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 .service-cta{ font-size: 12px; margin-top: 8px; color: #1f6f6f; }
 
 @media (max-width: 900px){
+  .nav{
+    min-height: 64px;
+    padding: 8px 0;
+    align-items: flex-start;
+  }
+  .brand{
+    font-size: 18px;
+    letter-spacing: 0.06em;
+  }
+  .navlinks{
+    gap: 12px;
+    font-size: 12px;
+  }
   .hero{
     min-height: 420px;
   }

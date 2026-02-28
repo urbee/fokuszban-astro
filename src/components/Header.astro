@@ -8,6 +8,13 @@ const nav = [
   { href: "https://fokuszfeszek.blogspot.com/", label: "Blog" },
 ];
 const logoUrl = "https://static.wixstatic.com/media/162124_a2f2db100bb64119ae9091c982e814b9~mv2.png/v1/fill/w_71,h_71,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo_circles_adjusted_transparent.png";
+const currentPath = Astro.url.pathname.replace(/\/+$/, "") || "/";
+const isActive = (href: string) => {
+  if (href.startsWith("http")) return false;
+  const normalizedHref = href.replace(/\/+$/, "") || "/";
+  if (normalizedHref === "/") return currentPath === "/";
+  return currentPath === normalizedHref || currentPath.startsWith(`${normalizedHref}/`);
+};
 ---
 <header>
   <div class="container">
@@ -17,9 +24,14 @@ const logoUrl = "https://static.wixstatic.com/media/162124_a2f2db100bb64119ae909
         <strong>FókuszBAN</strong>
       </a>
       <nav class="navlinks" aria-label="Fő navigáció">
-        {nav.map((item) => (
-          <a href={item.href}>{item.label}</a>
-        ))}
+        {nav.map((item) => {
+          const active = isActive(item.href);
+          return (
+            <a href={item.href} class={active ? "is-active" : undefined} aria-current={active ? "page" : undefined}>
+              {item.label}
+            </a>
+          );
+        })}
       </nav>
     </div>
   </div>
