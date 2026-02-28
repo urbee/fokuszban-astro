@@ -28,7 +28,7 @@ h4,h5,h6{
 a{ color:inherit; text-decoration:underline; text-underline-offset: 2px; }
 a:hover{ opacity:.85; }
 .container{ max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad); }
-header{ border-bottom:1px solid var(--border); background:#fff; }
+header{ background:#fff; }
 .nav{
   display: grid;
   grid-template-columns: auto 1fr;
