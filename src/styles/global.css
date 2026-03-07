@@ -43,7 +43,7 @@ header{
   align-items: center;
   row-gap: 6px;
   column-gap: 28px;
-  padding: 36px 0 32px;
+  padding: 51px 0 47px;
 }
 .brand{
   grid-area: brand;
@@ -59,6 +59,7 @@ header{
 .brand-tagline{
   grid-area: tagline;
   padding-left: 54px;
+  margin-top: 20px;
   font-size: 13px;
   letter-spacing: 0.16em;
   color: #2a2a2a;
@@ -72,7 +73,7 @@ header{
   align-items: center;
   justify-content: flex-end;
   gap: 24px;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0.005em;
 }
 .navlinks a{
