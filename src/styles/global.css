@@ -243,18 +243,25 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   border: 1px solid #e4e4e4;
   box-shadow: 0 1px 4px rgba(0,0,0,.04);
 }
+.about-card > *{
+  max-width: min(380px, 100%);
+  margin-left: clamp(8px, 1.3vw, 22px);
+}
 .about-card h2{
   margin: 0 0 16px;
-  font-size: clamp(1.2rem, 1.45vw, 1.62rem);
+  font-size: clamp(1.34rem, 1.85vw, 2rem);
   letter-spacing: 0.115em;
   line-height: 1.18;
   font-weight: 800;
   color: #181818;
 }
 .about-meta{
-  font-size: clamp(10.5px, 0.86vw, 11.5px);
+  font-size: clamp(11.5px, 1.02vw, 13px);
   color: #303030;
-  line-height: 1.62;
+  line-height: 1.68;
+}
+.about-meta div{
+  font-weight: 700;
 }
 .about-meta > div + div{
   margin-top: 1px;
@@ -267,32 +274,34 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .about-social a{
   display: inline-flex;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   align-items: center;
   justify-content: center;
   text-decoration: none;
 }
 .about-social img{
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   object-fit: contain;
   display: block;
 }
 .about-sep{
-  width: 34px;
+  width: 52px;
   border-top: 1px solid #6c6c6c;
   margin: 10px 0 12px;
 }
 .about-text{
-  font-size: clamp(12px, 1vw, 13px);
-  line-height: 1.75;
+  font-size: clamp(12.5px, 1.06vw, 14px);
+  line-height: 1.78;
   color: #2a2a2a;
   margin: 0 0 14px;
   max-width: none;
 }
 .about-text-secondary{
   margin-bottom: 14px;
+  font-weight: 700;
+  color: #1f1f1f;
 }
 .about-card .btn{
   align-self: flex-start;
@@ -429,6 +438,10 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   }
   .about-card{
     padding: 22px 18px;
+  }
+  .about-card > *{
+    margin-left: 0;
+    max-width: 100%;
   }
 }
 
