@@ -239,21 +239,21 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: clamp(18px, 2vw, 30px) clamp(18px, 3.2vw, 64px);
+  padding: clamp(20px, 2.2vw, 34px) clamp(16px, 2.8vw, 58px);
   border: 1px solid #e4e4e4;
   box-shadow: 0 1px 4px rgba(0,0,0,.04);
 }
 .about-column{
-  width: min(440px, 100%);
+  width: min(470px, 100%);
   margin-left: clamp(34px, 3.6vw, 58px);
-  margin-right: clamp(6px, 0.9vw, 12px);
+  margin-right: clamp(2px, 0.4vw, 6px);
 }
 .about-column > *{
   margin-left: 0;
   margin-right: 0;
 }
 .about-card h2{
-  margin: 0 0 16px;
+  margin: 0 0 22px;
   font-size: clamp(1.26rem, 1.6vw, 1.8rem);
   letter-spacing: 0.092em;
   line-height: 1.18;
@@ -266,48 +266,50 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   color: #303030;
   line-height: 1.62;
   margin-left: 0;
+  margin-bottom: 14px;
 }
 .about-meta div{
   font-weight: 700;
   white-space: nowrap;
 }
 .about-meta > div + div{
-  margin-top: 1px;
+  margin-top: 4px;
 }
 .about-social{
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-top: 12px;
+  gap: 12px;
+  margin-top: 8px;
+  margin-bottom: 10px;
 }
 .about-social a{
   display: inline-flex;
-  width: 30px;
-  height: 30px;
+  width: 38px;
+  height: 38px;
   align-items: center;
   justify-content: center;
   text-decoration: none;
 }
 .about-social img{
-  width: 30px;
-  height: 30px;
+  width: 38px;
+  height: 38px;
   object-fit: contain;
   display: block;
 }
 .about-sep{
   width: 52px;
   border-top: 1px solid #6c6c6c;
-  margin: 10px 0 12px;
+  margin: 14px 0 18px;
 }
 .about-text{
   font-size: clamp(14.5px, 1.16vw, 15.5px);
   line-height: 1.74;
   color: #2a2a2a;
-  margin: 0 0 14px;
+  margin: 0 0 20px;
   max-width: none;
 }
 .about-text-secondary{
-  margin-bottom: 14px;
+  margin-bottom: 20px;
   font-weight: 700;
   color: #1f1f1f;
 }
