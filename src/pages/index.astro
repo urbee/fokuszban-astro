@@ -235,6 +235,8 @@ const REVIEWS = [
       if (!slides.length) return;
 
       let current = 0;
+      let autoRotateId;
+      const AUTO_ROTATE_MS = 15000;
       const render = () => {
         slides.forEach((slide, idx) => {
           const active = idx === current;
@@ -249,26 +251,39 @@ const REVIEWS = [
         });
       };
 
-      prev?.addEventListener("click", () => {
-        current = (current - 1 + slides.length) % slides.length;
+      const goTo = (idx) => {
+        current = (idx + slides.length) % slides.length;
         render();
+      };
+
+      const restartAutoRotate = () => {
+        if (autoRotateId) window.clearInterval(autoRotateId);
+        autoRotateId = window.setInterval(() => {
+          goTo(current + 1);
+        }, AUTO_ROTATE_MS);
+      };
+
+      prev?.addEventListener("click", () => {
+        goTo(current - 1);
+        restartAutoRotate();
       });
 
       next?.addEventListener("click", () => {
-        current = (current + 1) % slides.length;
-        render();
+        goTo(current + 1);
+        restartAutoRotate();
       });
 
       dots.forEach((dot) => {
         dot.addEventListener("click", () => {
           const idx = Number(dot.getAttribute("data-dot"));
           if (Number.isNaN(idx)) return;
-          current = idx;
-          render();
+          goTo(idx);
+          restartAutoRotate();
         });
       });
 
       render();
+      restartAutoRotate();
     });
   })();
 </script>
