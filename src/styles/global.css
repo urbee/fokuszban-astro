@@ -401,7 +401,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   text-align: center;
   margin: 0 0 26px;
   letter-spacing: 0.18em;
-  font-size: clamp(32px, 4.4vw, 52px);
+  font-size: clamp(26px, 3.5vw, 42px);
   font-weight: 800;
 }
 .testimonials-carousel{
@@ -426,13 +426,13 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .testimonial-quote{
   margin: 0;
-  font-size: clamp(17px, 1.4vw, 24px);
+  font-size: clamp(15px, 1.25vw, 22px);
   line-height: 1.7;
   color: #242424;
 }
 .testimonial-author{
   margin-top: 22px;
-  font-size: clamp(20px, 1.8vw, 28px);
+  font-size: clamp(18px, 1.6vw, 25px);
   font-style: italic;
   font-weight: 700;
   color: #1e1e1e;
@@ -467,9 +467,17 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 .testimonial-dot{
   width: 10px;
   height: 10px;
-  border-radius: 50%;
+  min-width: 10px;
+  min-height: 10px;
+  padding: 0;
+  display: block;
+  flex: 0 0 10px;
+  aspect-ratio: 1 / 1;
+  box-sizing: border-box;
+  border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.95);
   background: transparent;
+  appearance: none;
   cursor: pointer;
 }
 .testimonial-dot.is-active{
@@ -601,11 +609,11 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
     padding: 20px 18px;
   }
   .testimonial-quote{
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.58;
   }
   .testimonial-author{
-    font-size: 21px;
+    font-size: 19px;
   }
   .testimonial-dots{
     margin-top: 14px;
