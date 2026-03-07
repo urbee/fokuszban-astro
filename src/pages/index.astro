@@ -19,13 +19,14 @@ const SERVICES = [
   },
   {
     title: "Mentálhigiénés segítő beszélgetés",
-    subtitle: "egyéni / pár / család",
+    subtitle: "egyéni",
     href: "/about-6-1",
     img: "https://static.wixstatic.com/media/162124_ebdf5ec04f60479480bec76300a15a16~mv2.jpg/v1/crop/x_0,y_38,w_1064,h_851/fill/w_288,h_209,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/beech-3385957_1280.jpg",
   },
   {
-    title: "Csoportos önismereti",
-    subtitle: "fókuszolás csoport",
+    title: "Önismereti csoport",
+    subtitle: "a fókuszolás módszerével",
+    subtitle2: "csoportos",
     href: "/about-6-2",
     img: "https://static.wixstatic.com/media/162124_b1c5e9b6081547e09dacab5f0cf12bd7~mv2.jpg/v1/crop/x_107,y_0,w_1066,h_853/fill/w_288,h_209,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nature-1157480_1280.jpg",
   },
@@ -106,7 +107,8 @@ const SERVICES = [
             <div class="service-body">
               <div class="service-title">{s.title}</div>
               <div class="service-sub">{s.subtitle}</div>
-              <div class="service-cta">Bővebben →</div>
+              {s.subtitle2 ? <div class="service-sub">{s.subtitle2}</div> : null}
+              <div class="service-cta">Bővebben</div>
             </div>
           </a>
         ))}
