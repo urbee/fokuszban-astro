@@ -108,7 +108,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 
 /* Hero */
 .hero{
-  height: clamp(560px, 82vh, 720px);
+  height: clamp(600px, 86vh, 760px);
   position: relative;
   top: 0;
   z-index: 1;
@@ -389,8 +389,8 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
     font-size: 12px;
   }
   .hero{
-    height: 68vh;
-    min-height: 430px;
+    height: 72vh;
+    min-height: 470px;
   }
   .hero-inner{
     padding: 0 20px;
