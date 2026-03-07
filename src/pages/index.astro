@@ -96,19 +96,21 @@ const SERVICES = [
   </section>
 
   <!-- SERVICES -->
-  <section class="container services">
-    <h2 class="section-title">SZOLGÁLTATÁSOK</h2>
-    <div class="services-grid">
-      {SERVICES.map((s) => (
-        <a class="service-card" href={s.href}>
-          <img src={s.img} alt={s.title} loading="lazy" />
-          <div class="service-body">
-            <div class="service-title">{s.title}</div>
-            <div class="service-sub">{s.subtitle}</div>
-            <div class="service-cta">Bővebben →</div>
-          </div>
-        </a>
-      ))}
+  <section class="services">
+    <div class="container">
+      <h2 class="section-title">SZOLGÁLTATÁSOK</h2>
+      <div class="services-grid">
+        {SERVICES.map((s) => (
+          <a class="service-card" href={s.href}>
+            <img src={s.img} alt={s.title} loading="lazy" />
+            <div class="service-body">
+              <div class="service-title">{s.title}</div>
+              <div class="service-sub">{s.subtitle}</div>
+              <div class="service-cta">Bővebben →</div>
+            </div>
+          </a>
+        ))}
+      </div>
     </div>
   </section>
 </FullWidthLayout>
