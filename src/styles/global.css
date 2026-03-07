@@ -101,96 +101,96 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   border-top: 0;
   background: #65c6cd;
   color: #0f2f34;
-  padding: clamp(32px, 5vw, 58px) 0 clamp(30px, 4vw, 52px);
+  padding: clamp(24px, 3.2vw, 38px) 0 clamp(22px, 3vw, 34px);
 }
 .site-footer-inner{
   display: grid;
   grid-template-columns: 1fr;
 }
 .site-footer-col{
-  max-width: 460px;
+  max-width: 360px;
 }
 .site-footer-title-wrap{
-  margin-bottom: 34px;
+  margin-bottom: 20px;
 }
 .site-footer-title-line{
-  width: 42px;
+  width: 30px;
   border-top: 2px solid rgba(10, 37, 43, 0.8);
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 .site-footer-title{
   margin: 0;
-  font-size: 36px;
-  line-height: 1.05;
-  letter-spacing: 0.12em;
+  font-size: 18px;
+  line-height: 1.12;
+  letter-spacing: 0.11em;
   font-weight: 800;
 }
 .site-footer-subtitle{
-  font-size: 17px;
+  font-size: 11px;
   line-height: 1.25;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.09em;
   font-weight: 700;
 }
 .site-footer-contact{
-  font-size: 31px;
-  line-height: 1.62;
+  font-size: 14px;
+  line-height: 1.65;
 }
 .site-footer-contact a{
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 .site-footer-social{
-  margin-top: 18px;
+  margin-top: 12px;
 }
 .site-footer-social a{
-  font-size: 40px;
+  font-size: 32px;
   line-height: 1;
   font-weight: 700;
   text-decoration: none;
 }
 .site-footer-copy{
-  margin-top: 26px;
-  font-size: 25px;
-  line-height: 1.35;
+  margin-top: 18px;
+  font-size: 13px;
+  line-height: 1.45;
 }
 
 @media (max-width: 900px){
   .site-footer-title{
-    font-size: 29px;
+    font-size: 17px;
   }
   .site-footer-subtitle{
-    font-size: 14px;
+    font-size: 10px;
   }
   .site-footer-contact{
-    font-size: 23px;
+    font-size: 13px;
   }
   .site-footer-social a{
-    font-size: 32px;
+    font-size: 29px;
   }
   .site-footer-copy{
-    font-size: 19px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 760px){
   .site-footer{
-    padding: 28px 0 30px;
+    padding: 22px 0 24px;
   }
   .site-footer-title{
-    font-size: 24px;
+    font-size: 16px;
   }
   .site-footer-subtitle{
-    font-size: 12px;
+    font-size: 10px;
   }
   .site-footer-contact{
-    font-size: 18px;
-    line-height: 1.7;
+    font-size: 13px;
+    line-height: 1.65;
   }
   .site-footer-social a{
-    font-size: 28px;
+    font-size: 26px;
   }
   .site-footer-copy{
-    font-size: 16px;
+    font-size: 12px;
     max-width: 260px;
   }
 }
