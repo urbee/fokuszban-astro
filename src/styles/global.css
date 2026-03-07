@@ -123,7 +123,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   inset: 0;
   background:
     url("https://static.wixstatic.com/media/162124_03517a6cebc1431c9b0d26f570b786e1~mv2.jpg/v1/fill/w_1718,h_1074,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/162124_03517a6cebc1431c9b0d26f570b786e1~mv2.jpg")
-      center 38% / cover no-repeat;
+      center 62% / cover no-repeat;
   transform: none;
 }
 
@@ -139,7 +139,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .hero-title{
   margin: 0 0 14px;
-  font-size: clamp(2.95rem, 6.0vw, 5.05rem);
+  font-size: clamp(4.2rem, 7.1vw, 6.3rem);
   line-height: 1.03;
   letter-spacing: 0.18em;
   font-weight: 800;
