@@ -426,7 +426,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .testimonial-quote{
   margin: 0;
-  font-size: clamp(13px, 1.02vw, 18px);
+  font-size: clamp(15px, 1.12vw, 20px);
   line-height: 1.62;
   color: #242424;
 }
@@ -614,7 +614,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
     padding: 20px 18px;
   }
   .testimonial-quote{
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.58;
   }
   .testimonial-author{
