@@ -97,6 +97,103 @@ header{
 main{ padding: 34px 0 56px; }
 main.main-full{ padding-top: 0; }
 footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted); font-size: 14px; }
+.site-footer{
+  border-top: 0;
+  background: #65c6cd;
+  color: #0f2f34;
+  padding: clamp(32px, 5vw, 58px) 0 clamp(30px, 4vw, 52px);
+}
+.site-footer-inner{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.site-footer-col{
+  max-width: 460px;
+}
+.site-footer-title-wrap{
+  margin-bottom: 34px;
+}
+.site-footer-title-line{
+  width: 42px;
+  border-top: 2px solid rgba(10, 37, 43, 0.8);
+  margin-bottom: 14px;
+}
+.site-footer-title{
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.05;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+}
+.site-footer-subtitle{
+  font-size: 17px;
+  line-height: 1.25;
+  letter-spacing: 0.11em;
+  font-weight: 700;
+}
+.site-footer-contact{
+  font-size: 31px;
+  line-height: 1.62;
+}
+.site-footer-contact a{
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.site-footer-social{
+  margin-top: 18px;
+}
+.site-footer-social a{
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 700;
+  text-decoration: none;
+}
+.site-footer-copy{
+  margin-top: 26px;
+  font-size: 25px;
+  line-height: 1.35;
+}
+
+@media (max-width: 900px){
+  .site-footer-title{
+    font-size: 29px;
+  }
+  .site-footer-subtitle{
+    font-size: 14px;
+  }
+  .site-footer-contact{
+    font-size: 23px;
+  }
+  .site-footer-social a{
+    font-size: 32px;
+  }
+  .site-footer-copy{
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 760px){
+  .site-footer{
+    padding: 28px 0 30px;
+  }
+  .site-footer-title{
+    font-size: 24px;
+  }
+  .site-footer-subtitle{
+    font-size: 12px;
+  }
+  .site-footer-contact{
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  .site-footer-social a{
+    font-size: 28px;
+  }
+  .site-footer-copy{
+    font-size: 16px;
+    max-width: 260px;
+  }
+}
 .prose img{ max-width: 100%; height: auto; border-radius: 10px; }
 .prose h1{ margin-top: 0; }
 .prose > * + *{ margin-top: 0.95rem; }
