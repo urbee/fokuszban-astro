@@ -401,7 +401,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   text-align: center;
   margin: 0 0 26px;
   letter-spacing: 0.18em;
-  font-size: clamp(26px, 3.5vw, 42px);
+  font-size: clamp(22px, 2.6vw, 34px);
   font-weight: 800;
 }
 .testimonials-carousel{
@@ -426,13 +426,13 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .testimonial-quote{
   margin: 0;
-  font-size: clamp(15px, 1.25vw, 22px);
-  line-height: 1.7;
+  font-size: clamp(13px, 1.02vw, 18px);
+  line-height: 1.62;
   color: #242424;
 }
 .testimonial-author{
   margin-top: 22px;
-  font-size: clamp(18px, 1.6vw, 25px);
+  font-size: clamp(16px, 1.25vw, 21px);
   font-style: italic;
   font-weight: 700;
   color: #1e1e1e;
@@ -465,23 +465,28 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   margin-top: 18px;
 }
 .testimonial-dot{
-  width: 10px;
-  height: 10px;
-  min-width: 10px;
-  min-height: 10px;
+  width: 9px;
+  height: 9px;
+  min-width: 9px;
+  min-height: 9px;
   padding: 0;
   display: block;
-  flex: 0 0 10px;
+  flex: 0 0 9px;
   aspect-ratio: 1 / 1;
+  font-size: 0;
+  line-height: 0;
   box-sizing: border-box;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  border: 0;
+  box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.95);
   background: transparent;
   appearance: none;
+  -webkit-appearance: none;
   cursor: pointer;
 }
 .testimonial-dot.is-active{
   background: #fff;
+  box-shadow: none;
 }
 
 @media (max-width: 900px){
@@ -609,11 +614,11 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
     padding: 20px 18px;
   }
   .testimonial-quote{
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.58;
   }
   .testimonial-author{
-    font-size: 19px;
+    font-size: 17px;
   }
   .testimonial-dots{
     margin-top: 14px;
