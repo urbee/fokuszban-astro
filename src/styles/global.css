@@ -243,22 +243,28 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   border: 1px solid #e4e4e4;
   box-shadow: 0 1px 4px rgba(0,0,0,.04);
 }
-.about-card > *{
-  max-width: min(380px, 100%);
-  margin-left: clamp(8px, 1.3vw, 22px);
+.about-column{
+  width: min(390px, 100%);
+  margin-left: clamp(10px, 1.5vw, 24px);
+  margin-right: clamp(14px, 2vw, 30px);
+}
+.about-column > *{
+  margin-left: 0;
+  margin-right: 0;
 }
 .about-card h2{
   margin: 0 0 16px;
-  font-size: clamp(1.34rem, 1.85vw, 2rem);
-  letter-spacing: 0.115em;
+  font-size: clamp(1.26rem, 1.6vw, 1.8rem);
+  letter-spacing: 0.092em;
   line-height: 1.18;
   font-weight: 800;
   color: #181818;
+  white-space: nowrap;
 }
 .about-meta{
-  font-size: clamp(11.5px, 1.02vw, 13px);
+  font-size: clamp(12.5px, 1.15vw, 14.5px);
   color: #303030;
-  line-height: 1.68;
+  line-height: 1.62;
 }
 .about-meta div{
   font-weight: 700;
@@ -292,8 +298,8 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   margin: 10px 0 12px;
 }
 .about-text{
-  font-size: clamp(12.5px, 1.06vw, 14px);
-  line-height: 1.78;
+  font-size: clamp(12.5px, 1.02vw, 13.5px);
+  line-height: 1.74;
   color: #2a2a2a;
   margin: 0 0 14px;
   max-width: none;
@@ -439,9 +445,13 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   .about-card{
     padding: 22px 18px;
   }
-  .about-card > *{
+  .about-column{
+    width: 100%;
     margin-left: 0;
-    max-width: 100%;
+    margin-right: 0;
+  }
+  .about-card h2{
+    white-space: normal;
   }
 }
 
