@@ -209,13 +209,14 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .home-about{
   display: grid;
-  grid-template-columns: minmax(0, 1.06fr) minmax(0, 0.94fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
   gap: clamp(12px, 2vw, 22px);
   align-items: stretch;
-  width: min(1180px, 100%);
+  width: 100%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 clamp(10px, 2vw, 22px);
+  padding: 0 clamp(16px, 6vw, 120px);
 }
 .about-image{
   min-width: 0;
@@ -233,6 +234,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 
 .about-card{
   min-width: 0;
+  width: 100%;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -371,6 +373,10 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   }
   .hero-quote::before{
     font-size: 104px;
+  }
+  .home-about{
+    grid-template-columns: minmax(0, 1.03fr) minmax(0, 0.97fr);
+    padding: 0 clamp(12px, 3vw, 24px);
   }
   .services-grid{ grid-template-columns: 1fr; }
   .service-card{ grid-template-columns: 1fr; }
