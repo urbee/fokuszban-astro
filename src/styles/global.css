@@ -209,9 +209,9 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .home-about{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.9fr 1.1fr;
   gap: 0;
-  align-items: stretch;
+  align-items: start;
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -224,11 +224,10 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 .about-image img{
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   min-height: 0;
-  max-height: 780px;
-  object-fit: cover;
-  object-position: center center;
+  max-height: none;
+  object-fit: contain;
   border-radius: 0;
 }
 
