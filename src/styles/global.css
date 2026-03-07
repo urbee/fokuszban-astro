@@ -156,13 +156,13 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 .hero-quote{
   position: relative;
   margin: 0;
-  font-size: 21px;
+  font-size: 23px;
   line-height: 1.48;
   color: #edf0f2;
   max-width: 980px;
   text-align: center;
   font-style: italic;
-  font-weight: 500;
+  font-weight: 700;
 }
 .hero-quote::before{
   content: "\201D";
