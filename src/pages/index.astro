@@ -33,6 +33,34 @@ const SERVICES = [
     img: "https://static.wixstatic.com/media/162124_b1c5e9b6081547e09dacab5f0cf12bd7~mv2.jpg/v1/crop/x_107,y_0,w_1066,h_853/fill/w_288,h_209,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nature-1157480_1280.jpg",
   },
 ];
+
+const REVIEWS = [
+  {
+    quote:
+      "Nagyon felkészült és kedves csoportvezetőt ismertem meg a személyedben. Jól éreztem magam a csoportban, sokat tett hozzá az önismeretemhez, és inspirált, hogy mélyebben is megismerkedjek ezzel a fantasztikus módszerrel.",
+    author: "György, Budapest",
+  },
+  {
+    quote:
+      "Olyan élményben volt részem, amit nem tudok úgy kifejezni, hogy abból mások, akik nem voltak ott, átérezhessék, hogy mennyire megváltozott az életszemléletem. Nem azt mondom, hogy jobb lett az életem, hanem azt, hogy az elakadásaimat, a mindig újratermelődő rossz működésemet más szemmel látom, és már nem megoldhatatlan reménytelenségként élem meg.",
+    author: "Kati, Szigetcsép",
+  },
+  {
+    quote:
+      "A pálferis honlapon keresztül találtam a csoportra, ott regisztráltam a májusi fókuszolós hétvégére. Minden túlzás nélkül ilyen elfogadó közegben még nem voltam. Nagyon köszönöm.",
+    author: "Zoli, Budapest",
+  },
+  {
+    quote:
+      "Biztonságos és barátságos légkörű volt a hétvégi fókuszolós workshop. Tetszettek a változatos és élményszerű feladatok, a fókuszolás módszere pedig közelebb vitt önmagamhoz. A csendes figyelemben eltöltött idő másoknak is segíthet az önismeret útján.",
+    author: "István, Budapest",
+  },
+  {
+    quote:
+      "A hétvégi, kétnapos csoportozás, amin részt vettem, nagyon jó hangulatban telt. Tartalmas és jól felépített programokból állt, sokkal többet adott, mint amire számítottam. Sok érdekes és változatos gyakorlatot végeztünk a két nap alatt, közben ráébredtem egy-egy eddig nem tudatos működésemre. A bennem lévő, a mindennapjaimat átszövő negatív életérzések oldódtak a feladatok során. Meleg szívvel ajánlom bárkinek, aki az önismeretének fejlesztéséhez vagy lelki problémáinak megoldásához keresi az utat.",
+    author: "Andi, Budapest",
+  },
+];
 ---
 
 <FullWidthLayout title="Fókuszban">
@@ -118,6 +146,43 @@ const SERVICES = [
       </div>
     </div>
   </section>
+
+  <section class="testimonials">
+    <div class="container testimonials-inner">
+      <h2 class="testimonials-title">VÉLEMÉNYEK</h2>
+      <div class="testimonials-carousel" data-carousel>
+        <button class="carousel-arrow carousel-arrow-prev" type="button" aria-label="Előző vélemény" data-prev>
+          ‹
+        </button>
+
+        <div class="testimonial-stage">
+          {REVIEWS.map((review, idx) => (
+            <article class:list={["testimonial-card", idx === 0 && "is-active"]} data-slide aria-hidden={idx === 0 ? "false" : "true"}>
+              <p class="testimonial-quote">"{review.quote}"</p>
+              <div class="testimonial-author">{review.author}</div>
+            </article>
+          ))}
+        </div>
+
+        <button class="carousel-arrow carousel-arrow-next" type="button" aria-label="Következő vélemény" data-next>
+          ›
+        </button>
+
+        <div class="testimonial-dots" role="tablist" aria-label="Vélemények lapozása">
+          {REVIEWS.map((_, idx) => (
+            <button
+              class:list={["testimonial-dot", idx === 0 && "is-active"]}
+              type="button"
+              role="tab"
+              aria-label={`Vélemény ${idx + 1}`}
+              aria-selected={idx === 0 ? "true" : "false"}
+              data-dot={idx}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
 </FullWidthLayout>
 
 <script is:inline>
@@ -156,5 +221,54 @@ const SERVICES = [
       onScroll();
     });
     onScroll();
+  })();
+
+  (() => {
+    const carousels = document.querySelectorAll("[data-carousel]");
+    if (!carousels.length) return;
+
+    carousels.forEach((carousel) => {
+      const slides = Array.from(carousel.querySelectorAll("[data-slide]"));
+      const dots = Array.from(carousel.querySelectorAll("[data-dot]"));
+      const prev = carousel.querySelector("[data-prev]");
+      const next = carousel.querySelector("[data-next]");
+      if (!slides.length) return;
+
+      let current = 0;
+      const render = () => {
+        slides.forEach((slide, idx) => {
+          const active = idx === current;
+          slide.classList.toggle("is-active", active);
+          slide.setAttribute("aria-hidden", active ? "false" : "true");
+        });
+
+        dots.forEach((dot, idx) => {
+          const active = idx === current;
+          dot.classList.toggle("is-active", active);
+          dot.setAttribute("aria-selected", active ? "true" : "false");
+        });
+      };
+
+      prev?.addEventListener("click", () => {
+        current = (current - 1 + slides.length) % slides.length;
+        render();
+      });
+
+      next?.addEventListener("click", () => {
+        current = (current + 1) % slides.length;
+        render();
+      });
+
+      dots.forEach((dot) => {
+        dot.addEventListener("click", () => {
+          const idx = Number(dot.getAttribute("data-dot"));
+          if (Number.isNaN(idx)) return;
+          current = idx;
+          render();
+        });
+      });
+
+      render();
+    });
   })();
 </script>

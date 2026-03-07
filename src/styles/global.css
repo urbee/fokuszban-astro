@@ -385,6 +385,97 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .service-cta{ font-size: 13px; margin-top: 12px; color: #1f6f6f; align-self: flex-start; }
 
+/* Testimonials */
+.testimonials{
+  position: relative;
+  z-index: 4;
+  padding: 34px 0 42px;
+  background:
+    linear-gradient(rgba(196, 218, 220, 0.9), rgba(196, 218, 220, 0.9)),
+    radial-gradient(circle at 20% 20%, #d7eaeb 0, #c0d9db 58%, #b4d0d3 100%);
+}
+.testimonials-inner{
+  max-width: 1040px;
+}
+.testimonials-title{
+  text-align: center;
+  margin: 0 0 26px;
+  letter-spacing: 0.18em;
+  font-size: clamp(32px, 4.4vw, 52px);
+  font-weight: 800;
+}
+.testimonials-carousel{
+  position: relative;
+  min-height: 306px;
+}
+.testimonial-stage{
+  display: grid;
+  place-items: center;
+  padding: 0 72px;
+}
+.testimonial-card{
+  width: min(100%, 760px);
+  display: none;
+  background: #f5f5f5;
+  border: 1px solid rgba(26, 26, 26, 0.12);
+  padding: clamp(24px, 3vw, 36px) clamp(26px, 4vw, 56px) 22px;
+  text-align: center;
+}
+.testimonial-card.is-active{
+  display: block;
+}
+.testimonial-quote{
+  margin: 0;
+  font-size: clamp(17px, 1.4vw, 24px);
+  line-height: 1.7;
+  color: #242424;
+}
+.testimonial-author{
+  margin-top: 22px;
+  font-size: clamp(20px, 1.8vw, 28px);
+  font-style: italic;
+  font-weight: 700;
+  color: #1e1e1e;
+}
+.carousel-arrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: clamp(46px, 4vw, 62px);
+  line-height: 1;
+  cursor: pointer;
+  padding: 6px 10px;
+}
+.carousel-arrow-prev{
+  left: 0;
+}
+.carousel-arrow-next{
+  right: 0;
+}
+.carousel-arrow:hover{
+  color: #fff;
+}
+.testimonial-dots{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 18px;
+}
+.testimonial-dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  background: transparent;
+  cursor: pointer;
+}
+.testimonial-dot.is-active{
+  background: #fff;
+}
+
 @media (max-width: 900px){
   .nav{
     grid-template-columns: 1fr;
@@ -463,6 +554,18 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   .services-grid{ grid-template-columns: 1fr; }
   .service-card{ grid-template-columns: 1fr; }
   .service-card img{ width: 100%; height: 190px; }
+  .testimonials{
+    padding: 28px 0 34px;
+  }
+  .testimonials-carousel{
+    min-height: 282px;
+  }
+  .testimonial-stage{
+    padding: 0 30px;
+  }
+  .carousel-arrow{
+    display: none;
+  }
 }
 
 @media (max-width: 760px){
@@ -493,6 +596,19 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   }
   .about-card h2{
     white-space: normal;
+  }
+  .testimonial-card{
+    padding: 20px 18px;
+  }
+  .testimonial-quote{
+    font-size: 16px;
+    line-height: 1.58;
+  }
+  .testimonial-author{
+    font-size: 21px;
+  }
+  .testimonial-dots{
+    margin-top: 14px;
   }
 }
 
