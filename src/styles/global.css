@@ -182,7 +182,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   position: relative;
   z-index: 4;
   margin-top: -44px;
-  background: #fff;
+  background: #dfe3e5;
   padding: 0 0 40px;
 }
 .intro-quote-band{
@@ -190,10 +190,10 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   background:
     linear-gradient(
       to bottom,
-      rgba(238,240,241,.24) 0,
-      rgba(238,240,241,.24) 46px,
-      #c3c8cb 46px,
-      #c3c8cb 100%
+      rgba(238,240,241,.30) 0,
+      rgba(238,240,241,.30) 46px,
+      #c7cbce 46px,
+      #c7cbce 100%
     );
   min-height: 138px;
   display: flex;
