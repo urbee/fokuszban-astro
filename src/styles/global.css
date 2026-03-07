@@ -247,43 +247,40 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   width: min(470px, 100%);
   margin-left: clamp(34px, 3.6vw, 58px);
   margin-right: clamp(2px, 0.4vw, 6px);
-  font-family: "Avenir LT Std", "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 300;
 }
 .about-column > *{
   margin-left: 0;
   margin-right: 0;
 }
 .about-card h2{
-  margin: 0 0 28px;
+  margin: 0 0 22px;
   font-size: clamp(1.26rem, 1.6vw, 1.8rem);
   letter-spacing: 0.092em;
   line-height: 1.18;
   font-weight: 800;
   color: #181818;
   white-space: nowrap;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .about-meta{
   font-size: clamp(14.5px, 1.3vw, 16.5px);
   color: #303030;
   line-height: 1.62;
   margin-left: 0;
-  margin-bottom: 22px;
+  margin-bottom: 14px;
 }
 .about-meta div{
-  font-weight: 400;
+  font-weight: 700;
   white-space: nowrap;
 }
 .about-meta > div + div{
-  margin-top: 8px;
+  margin-top: 4px;
 }
 .about-social{
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 14px;
-  margin-bottom: 16px;
+  margin-top: 8px;
+  margin-bottom: 10px;
 }
 .about-social a{
   display: inline-flex;
@@ -302,29 +299,23 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 .about-sep{
   width: 52px;
   border-top: 1px solid #6c6c6c;
-  margin: 18px 0 24px;
-}
-.about-bio{
-  max-width: min(330px, calc(100% - 6px));
+  margin: 14px 0 18px;
 }
 .about-text{
   font-size: clamp(14.5px, 1.16vw, 15.5px);
-  line-height: 1.82;
+  line-height: 1.74;
   color: #2a2a2a;
-  margin: 0 0 24px;
+  margin: 0 0 20px;
   max-width: none;
-  font-weight: 300;
 }
 .about-text-secondary{
-  margin-bottom: 26px;
-  font-weight: 400;
+  margin-bottom: 20px;
+  font-weight: 700;
   color: #1f1f1f;
 }
 .about-card .btn{
   align-self: flex-start;
   font-size: 14px;
-  font-family: "Avenir LT Std", "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
-  margin-top: 8px;
 }
 
 .btn{
