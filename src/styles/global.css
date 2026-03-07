@@ -231,7 +231,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   min-height: 0;
   max-height: none;
   object-fit: cover;
-  object-position: center center;
+  object-position: left center;
   border-radius: 0;
 }
 
