@@ -3,6 +3,12 @@ import FullWidthLayout from "../layouts/FullWidthLayout.astro";
 
 const PORTRAIT =
   "https://static.wixstatic.com/media/162124_05ddbac1625b4c60b1318bd5b7b5ac97~mv2.jpg/v1/fill/w_857,h_939,al_l,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/162124_05ddbac1625b4c60b1318bd5b7b5ac97~mv2.jpg";
+const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=100091760217142";
+const LINKEDIN_URL = "https://www.linkedin.com/in/melinda-koskocs%C3%A1k-0b24b4113/";
+const FACEBOOK_ICON =
+  "https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4057345bcf57474b96976284050c00df.png";
+const LINKEDIN_ICON =
+  "https://static.wixstatic.com/media/aa0402eb9ba2430d9d0620b59556efca.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aa0402eb9ba2430d9d0620b59556efca.png";
 
 const SERVICES = [
   {
@@ -51,17 +57,32 @@ const SERVICES = [
       <div class="about-card">
         <h2>DR. KOSKOCSÁK MELINDA</h2>
         <div class="about-meta">
-          <div>Mentálhigiénés szakember</div>
+          <div>Mentálhigiénés szakember,</div>
           <div>Pszichológushallgató (Károli Gáspár Református Egyetem)</div>
-          <div>Fókusztréner</div>
+          <div>Fókusztréner,</div>
           <div>OH kártya instruktor</div>
           <div>Jogász, volt polgári bíró</div>
         </div>
 
+        <div class="about-social" aria-label="Közösségi média">
+          <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src={FACEBOOK_ICON} alt="Facebook" loading="lazy" />
+          </a>
+          <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src={LINKEDIN_ICON} alt="LinkedIn" loading="lazy" />
+          </a>
+        </div>
+
+        <div class="about-sep" aria-hidden="true"></div>
+
         <p class="about-text">
           Korábban polgári vagyonjogi bíróként dolgoztam, de idővel egyre inkább a személyes, emberi kapcsolódás vált fontossá számomra.
-          Ez a belső irányváltás vezetett a segítői hivatáshoz, amelyben fókusztrénerként, mentálhigiénés segítőként és OH-kártya instruktorként
-          kísérek egyéni és csoportos önismereti folyamatokat.
+          Ez a belső irányváltás vezetett a segítői hivatáshoz, amelyben fókusztrénerként, mentálhigiénés segítőként és OH-kártya
+          instruktorként kísérek egyéni és csoportos önismereti folyamatokat.
+        </p>
+
+        <p class="about-text about-text-secondary">
+          Fontosnak tartom, hogy minél több emberhez eljusson milyen fontos az önismereti munka és felfedezzék az ebben rejlő lehetőséget.
         </p>
 
         <a class="btn" href="/melinda">További információk</a>
