@@ -244,8 +244,8 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   box-shadow: 0 1px 4px rgba(0,0,0,.04);
 }
 .about-column{
-  width: min(390px, 100%);
-  margin-left: clamp(10px, 1.5vw, 24px);
+  width: min(440px, 100%);
+  margin-left: clamp(22px, 2.6vw, 42px);
   margin-right: clamp(14px, 2vw, 30px);
 }
 .about-column > *{
@@ -265,9 +265,11 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   font-size: clamp(12.5px, 1.15vw, 14.5px);
   color: #303030;
   line-height: 1.62;
+  margin-left: clamp(8px, 0.8vw, 14px);
 }
 .about-meta div{
   font-weight: 700;
+  white-space: nowrap;
 }
 .about-meta > div + div{
   margin-top: 1px;
@@ -449,6 +451,12 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+  }
+  .about-meta{
+    margin-left: 0;
+  }
+  .about-meta div{
+    white-space: normal;
   }
   .about-card h2{
     white-space: normal;
