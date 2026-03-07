@@ -211,7 +211,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   gap: 0;
-  align-items: start;
+  align-items: stretch;
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -219,15 +219,17 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .about-image{
   min-width: 0;
+  height: 100%;
 }
 
 .about-image img{
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   min-height: 0;
-  max-height: none;
-  object-fit: contain;
+  max-height: 760px;
+  object-fit: cover;
+  object-position: center center;
   border-radius: 0;
 }
 
