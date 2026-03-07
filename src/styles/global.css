@@ -210,7 +210,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .home-about{
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: minmax(380px, 520px) minmax(0, 1fr);
   gap: 0;
   align-items: stretch;
   width: 100vw;
