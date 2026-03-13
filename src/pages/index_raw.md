@@ -9,7 +9,7 @@ Kapcsolatban önmagaddal, Kapcsolatban másokkal
 
 "A fókuszolás egy önismereti módszer, amely segít a bennünk zajló folyamatok tudatosításában és hozzájárul a belső egyensúly eléréséhez."
 
-![Meli](/wix_kepek/Meli_standing.jpg)
+![Meli_hosszabb.jpg](https://static.wixstatic.com/media/162124_05ddbac1625b4c60b1318bd5b7b5ac97~mv2.jpg/v1/fill/w_857,h_939,al_l,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/162124_05ddbac1625b4c60b1318bd5b7b5ac97~mv2.jpg)
 
 ## dr. koskocsák melinda
 
@@ -23,8 +23,8 @@ OH kártya instruktor
 
 Jogász, volt polgári bíró
 
-- [![Facebook](/wix_kepek/facebook.svg)](https://www.facebook.com/people/F%C3%B3kusz-F%C3%A9szek/100091760217142/)
-- [![LinkedIn](/wix_kepek/linkedin.svg)](https://www.linkedin.com/in/melinda-koskocs%C3%A1k-0b24b4113/)
+- [![Facebook](https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4057345bcf57474b96976284050c00df.png)](https://www.facebook.com/people/F%C3%B3kusz-F%C3%A9szek/100091760217142/)
+- [![LinkedIn](https://static.wixstatic.com/media/aa0402eb9ba2430d9d0620b59556efca.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aa0402eb9ba2430d9d0620b59556efca.png)](https://www.linkedin.com/in/melinda-koskocs%C3%A1k-0b24b4113/)
 
 Korábban polgári vagyonjogi bíróként dolgoztam, de idővel egyre inkább a személyes, emberi kapcsolódás vált fontossá számomra. Ez a belső irányváltás vezetett a segítői hivatáshoz, amelyben fókusztrénerként, mentálhigiénés segítőként és OH-kártya instruktorként kísérek egyéni és csoportos önismereti folyamatokat. Hiszek abban, hogy a figyelem, az elfogadás és a biztonságos tér megtartó és elmozdulást indíthat el. Jelenleg pszichológiát hallgatok a Károli Gáspár Református Egyetemen, ahol szakmai szemléletem tovább mélyül.
 
@@ -36,7 +36,7 @@ Fontosnak tartom, hogy minél több emberhez eljusson milyen fontos az önismere
 
 ## Szolgáltatások
 
-![service](/wix_kepek/IMG_5335.jpg)
+![kapu_filter.jpg](https://static.wixstatic.com/media/162124_34b9af50c29c4803b61935e570feee6e~mv2.jpg/v1/crop/x_0,y_0,w_791,h_633/fill/w_288,h_209,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/kapu_filter.jpg)
 
 Fókuszolás tanítás
 
@@ -44,7 +44,7 @@ egyéni
 
 [Bővebben](/about-6-1)
 
-![beech-3385957_1280.jpg](/wix_kepek/beech-3385957_1280.jpg)
+![beech-3385957_1280.jpg](https://static.wixstatic.com/media/162124_ebdf5ec04f60479480bec76300a15a16~mv2.jpg/v1/crop/x_0,y_38,w_1064,h_851/fill/w_288,h_209,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/beech-3385957_1280.jpg)
 
 Mentálhigiénés segítő beszélgetés
 
@@ -52,7 +52,7 @@ egyéni
 
 [Bővebben](/about-6)
 
-![service](/wix_kepek/IMG_5335.jpg)
+![nature-1157480_1280.jpg](https://static.wixstatic.com/media/162124_b1c5e9b6081547e09dacab5f0cf12bd7~mv2.jpg/v1/crop/x_107,y_0,w_1066,h_853/fill/w_288,h_209,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nature-1157480_1280.jpg)
 
 Önismereti csoport
 
@@ -72,7 +72,7 @@ Köszönjük, hogy feliratkozott!
 
 Igen, szeretném rendszeresen megkapni a fokuszban.com személyre szabott hírlevelét az aktuális ajánlatokról, újdonságokról és eseményekről. Ez a hozzájárulás magában foglalja a felhasználói profil készítését és az eredmény mérését is. Ezzel kapcsolatos további információkat adatvédelmi tájékoztatónk tartalmaz. Jelen hozzájárulás a jövőre nézve bármikor visszavonható.
 
-![](/wix_kepek/beech-3385957_1280.jpg)
+![](https://static.wixstatic.com/media/162124_f4ad75c8e6f642dc9357572c55c2721a~mv2.jpg/v1/fill/w_102,h_68,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/162124_f4ad75c8e6f642dc9357572c55c2721a~mv2.jpg)
 
 # Vélemények
 
@@ -88,9 +88,9 @@ György, Budapest
 
 A KÖVETKEZŐ HELYEKEN DOLGOZTAM:
 
-![palferi](/wix_kepek/palferi-logo.svg)
+![palferi-normal-logo.png](https://static.wixstatic.com/media/162124_5ca48c7100bb4413ad3f45441a2d5e79~mv2.png/v1/fill/w_99,h_99,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/palferi-normal-logo.png)
 
-![szimplan](/wix_kepek/szimplan-logo.svg)
+![szimplan_logo_01_kicsi.png](https://static.wixstatic.com/media/162124_db569e55ae2a4c3fb121f1d348d5fac6~mv2.png/v1/fill/w_244,h_122,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/szimplan_logo_01_kicsi.png)
 
 Kapcsolat
 
@@ -100,7 +100,7 @@ Telefon: 06 30 391 5306
 
 Email: [melinda.fokuszolas@gmail.com](mailto:melinda.fokuszolas@gmail.com)
 
-- [![Facebook](/wix_kepek/facebook.svg)](https://www.facebook.com/profile.php?id=100091760217142)
+- [![Facebook](https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0fdef751204647a3bbd7eaa2827ed4f9.png)](https://www.facebook.com/profile.php?id=100091760217142)
 
 © 2025 Fókuszban. Minden jog fenntartva.
 

@@ -219,7 +219,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   position: absolute;
   inset: 0;
   background:
-    url("/wix_kepek/beech-3385957_1280.jpg")
+    url("https://static.wixstatic.com/media/162124_03517a6cebc1431c9b0d26f570b786e1~mv2.jpg/v1/fill/w_1718,h_1074,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/162124_03517a6cebc1431c9b0d26f570b786e1~mv2.jpg")
       center 62% / cover no-repeat;
   transform: translateY(-80px) scale(1.06);
 }
