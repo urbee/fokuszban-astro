@@ -12,22 +12,27 @@ const QUALIFICATIONS = [
   {
     year: "2007",
     org: "ELTE ÁJK",
-    details: ["jogi diploma"],
+    detail: "jogi diploma",
   },
   {
     year: "2014",
     org: "Pázmány Péter Katolikus Egyetem JÁK",
-    details: ["banki- és tőkepiaci szakjogász diploma"],
+    detail: "banki- és tőkepiaci szakjogász diploma",
   },
   {
     year: "2023",
     org: "Szomato-pszichoterápiás Egyesület",
-    details: ["fókusztréner"],
+    detail: "fókusztréner",
   },
   {
     year: "2025",
     org: "Károli Gáspár Református Egyetem",
-    details: ["mentálhigiénés segítő szakember", "pszichológushallgató"],
+    detail: "mentálhigiénés segítő szakember",
+  },
+  {
+    year: "",
+    org: "Károli Gáspár Református Egyetem",
+    detail: "pszichológushallgató (folyamatban)",
   },
 ];
 ---
@@ -93,20 +98,17 @@ const QUALIFICATIONS = [
 
     <section class="melinda-qualifications">
       <h2>Végzettségeim</h2>
-      <div class="melinda-timeline">
+      <ul class="melinda-qual-list">
         {QUALIFICATIONS.map((item) => (
-          <div class="melinda-timeline-row">
+          <li class="melinda-qual-item">
             <div class="melinda-year">{item.year}</div>
-            <div class="melinda-node" aria-hidden="true"></div>
             <div class="melinda-degree">
               <div class="melinda-degree-org">{item.org}</div>
-              {item.details.map((detail) => (
-                <div class="melinda-degree-detail">{detail}</div>
-              ))}
+              <div class="melinda-degree-detail">{item.detail}</div>
             </div>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
 
     <section class="melinda-community">

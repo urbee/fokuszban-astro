@@ -861,17 +861,12 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   gap: 10px;
 }
 .melinda-social-mini a{
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: #000;
-  color: #fff;
+  color: #111;
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
+  display: inline-block;
+  font-size: 34px;
   font-weight: 700;
+  line-height: 1;
   font-family: Arial, Helvetica, sans-serif;
 }
 .melinda-about,
@@ -900,38 +895,22 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   max-width: 960px;
   font-weight: 400;
 }
-.melinda-timeline{
-  position: relative;
+.melinda-qual-list{
+  list-style: disc;
+  margin: 0;
+  padding-left: 24px;
   max-width: 980px;
 }
-.melinda-timeline::before{
-  content: "";
-  position: absolute;
-  top: 16px;
-  bottom: 16px;
-  left: 207px;
-  width: 1px;
-  background: #292929;
-}
-.melinda-timeline-row{
+.melinda-qual-item{
   display: grid;
-  grid-template-columns: 120px 40px 1fr;
-  align-items: start;
-  column-gap: 24px;
-  margin-bottom: 24px;
+  grid-template-columns: 96px 1fr;
+  column-gap: 22px;
+  margin-bottom: 14px;
 }
 .melinda-year{
   font-weight: 500;
   color: #303030;
   font-size: 19px;
-}
-.melinda-node{
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: #000;
-  margin-top: 8px;
-  margin-left: 15px;
 }
 .melinda-degree-org{
   font-size: 20px;
@@ -1004,18 +983,12 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
     font-size: clamp(32px, 8vw, 48px);
     margin-bottom: 18px;
   }
-  .melinda-timeline::before{
-    left: 154px;
-  }
-  .melinda-timeline-row{
-    grid-template-columns: 92px 28px 1fr;
-    column-gap: 18px;
+  .melinda-qual-item{
+    grid-template-columns: 82px 1fr;
+    column-gap: 16px;
   }
   .melinda-year{
     font-size: 16px;
-  }
-  .melinda-node{
-    margin-left: 10px;
   }
   .melinda-degree-org{
     font-size: 17px;
@@ -1065,22 +1038,16 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
     letter-spacing: 0.1em;
     padding-top: 16px;
   }
-  .melinda-timeline::before{
-    left: 120px;
+  .melinda-qual-list{
+    padding-left: 18px;
   }
-  .melinda-timeline-row{
-    grid-template-columns: 72px 24px 1fr;
-    column-gap: 14px;
-    margin-bottom: 16px;
+  .melinda-qual-item{
+    grid-template-columns: 66px 1fr;
+    column-gap: 12px;
+    margin-bottom: 12px;
   }
   .melinda-year{
     font-size: 14px;
-  }
-  .melinda-node{
-    width: 7px;
-    height: 7px;
-    margin-top: 6px;
-    margin-left: 8px;
   }
   .melinda-degree-org{
     font-size: 15px;
@@ -1100,5 +1067,8 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   }
   .melinda-community-image{
     min-height: 120px;
+  }
+  .melinda-social-mini a{
+    font-size: 28px;
   }
 }
