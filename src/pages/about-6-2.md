@@ -29,7 +29,7 @@ Telefon: 06 30 391 5306
 
 Email: [melinda.fokuszolas@gmail.com](mailto:melinda.fokuszolas@gmail.com)
 
-- [![Facebook](https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0fdef751204647a3bbd7eaa2827ed4f9.png)](https://www.facebook.com/profile.php?id=100091760217142)
+- [![Facebook](/wix_kepek/0fdef751204647a3bbd7eaa2827ed4f9.avif)](https://www.facebook.com/profile.php?id=100091760217142)
 
 © 2025 Fókuszban. Minden jog fenntartva.
 

@@ -23,8 +23,8 @@ OH kártya instruktor
 
 Jogász, volt polgári bíró
 
-- [![Facebook](https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4057345bcf57474b96976284050c00df.png)](https://www.facebook.com/people/F%C3%B3kusz-F%C3%A9szek/100091760217142/)
-- [![LinkedIn](https://static.wixstatic.com/media/aa0402eb9ba2430d9d0620b59556efca.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aa0402eb9ba2430d9d0620b59556efca.png)](https://www.linkedin.com/in/melinda-koskocs%C3%A1k-0b24b4113/)
+- [![Facebook](/wix_kepek/4057345bcf57474b96976284050c00df.avif)](https://www.facebook.com/people/F%C3%B3kusz-F%C3%A9szek/100091760217142/)
+- [![LinkedIn](/wix_kepek/aa0402eb9ba2430d9d0620b59556efca.avif)](https://www.linkedin.com/in/melinda-koskocs%C3%A1k-0b24b4113/)
 
 Korábban polgári vagyonjogi bíróként dolgoztam, de idővel egyre inkább a személyes, emberi kapcsolódás vált fontossá számomra. Ez a belső irányváltás vezetett a segítői hivatáshoz, amelyben fókusztrénerként, mentálhigiénés segítőként és OH-kártya instruktorként kísérek egyéni és csoportos önismereti folyamatokat. Hiszek abban, hogy a figyelem, az elfogadás és a biztonságos tér megtartó és elmozdulást indíthat el. Jelenleg pszichológiát hallgatok a Károli Gáspár Református Egyetemen, ahol szakmai szemléletem tovább mélyül.
 
@@ -100,7 +100,7 @@ Telefon: 06 30 391 5306
 
 Email: [melinda.fokuszolas@gmail.com](mailto:melinda.fokuszolas@gmail.com)
 
-- [![Facebook](https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0fdef751204647a3bbd7eaa2827ed4f9.png)](https://www.facebook.com/profile.php?id=100091760217142)
+- [![Facebook](/wix_kepek/0fdef751204647a3bbd7eaa2827ed4f9.avif)](https://www.facebook.com/profile.php?id=100091760217142)
 
 © 2025 Fókuszban. Minden jog fenntartva.
 
