@@ -95,7 +95,7 @@ header{
   border-bottom-color: rgba(31,111,111,.9);
 }
 main{ padding: 34px 0 56px; }
-main.main-full{ padding-top: 0; }
+main.main-full{ padding: 0; }
 footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted); font-size: 14px; }
 .site-footer{
   border-top: 0;
@@ -879,6 +879,10 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   margin: 0 auto;
   padding: 52px clamp(16px, 3vw, 34px) 0;
 }
+.melinda-about,
+.melinda-qualifications{
+  padding-left: clamp(58px, 7.4vw, 102px);
+}
 .melinda-about h2,
 .melinda-qualifications h2,
 .melinda-social-block h2{
@@ -939,15 +943,15 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 .melinda-degree-detail{
   font-size: 15px;
   line-height: 1.45;
-  font-style: normal;
+  font-style: italic;
   color: #2f2f2f;
 }
 .melinda-community{
   width: 100vw;
-  margin: 34px calc(50% - 50vw) 0;
+  margin: 26px calc(50% - 50vw) 0;
   padding: 0;
   display: grid;
-  grid-template-columns: minmax(240px, 360px) minmax(0, 1fr);
+  grid-template-columns: minmax(220px, 330px) minmax(0, 1fr);
   align-items: stretch;
 }
 .melinda-community-title{
@@ -976,10 +980,10 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   font-family: Arial, Helvetica, sans-serif;
 }
 .melinda-community-image{
-  min-height: clamp(140px, 16vw, 225px);
+  min-height: clamp(156px, 17vw, 240px);
   background:
     linear-gradient(rgba(255,255,255,0.08), rgba(255,255,255,0.08)),
-    var(--melinda-community-bg) center 64% / cover no-repeat;
+    var(--melinda-community-bg) center 50% / cover no-repeat;
 }
 
 @media (max-width: 900px){
@@ -1053,6 +1057,10 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   .melinda-social-block{
     padding: 28px 14px 0;
   }
+  .melinda-about,
+  .melinda-qualifications{
+    padding-left: 28px;
+  }
   .melinda-about h2,
   .melinda-qualifications h2,
   .melinda-social-block h2{
@@ -1078,7 +1086,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
     font-size: 14px;
   }
   .melinda-community{
-    padding: 0 0 20px;
+    padding: 0;
   }
   .melinda-community h2{
     font-size: 34px;
