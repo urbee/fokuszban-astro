@@ -795,7 +795,8 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 /* Melinda page */
 .melinda-page{
   margin: 0 calc(50% - 50vw);
-  background: #ececec;
+  background: #fff;
+  font-family: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .melinda-top-band{
   height: clamp(165px, 21vw, 250px);
@@ -897,6 +898,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   line-height: 1.72;
   color: #242424;
   max-width: 960px;
+  font-weight: 400;
 }
 .melinda-timeline{
   position: relative;
@@ -976,7 +978,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   min-height: clamp(130px, 16vw, 210px);
   background:
     linear-gradient(rgba(255,255,255,0.08), rgba(255,255,255,0.08)),
-    var(--melinda-community-bg) center / cover no-repeat;
+    var(--melinda-community-bg) right center / cover no-repeat;
 }
 
 @media (max-width: 900px){
