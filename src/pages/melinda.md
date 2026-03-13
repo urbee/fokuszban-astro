@@ -20,16 +20,14 @@ title: "Rólam"
         <li>Jogász, volt polgári bíró</li>
       </ul>
       <div class="melinda-contact-mini">
-        <div><strong>Telefon:</strong> 06 30 391 5306</div>
-        <div><strong>Email:</strong> <a href="mailto:melinda.fokuszolas@gmail.com">melinda.fokuszolas@gmail.com</a></div>
+        <div><strong>Telefon:</strong></div>
+        <div>06 30 391 5306</div>
+        <div class="melinda-contact-gap"><strong>Email:</strong></div>
+        <div><a href="mailto:melinda.fokuszolas@gmail.com">melinda.fokuszolas@gmail.com</a></div>
       </div>
       <div class="melinda-social-mini">
-        <a href="https://www.facebook.com/profile.php?id=100091760217142" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-          <img src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0fdef751204647a3bbd7eaa2827ed4f9.png" alt="Facebook" />
-        </a>
-        <a href="https://www.linkedin.com/in/melinda-koskocs%C3%A1k-0b24b4113/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <img src="https://static.wixstatic.com/media/11062b_72c275822d4344358ee379f14e7e115f~mv2.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_72c275822d4344358ee379f14e7e115f~mv2.png" alt="LinkedIn" />
-        </a>
+        <a href="https://www.facebook.com/profile.php?id=100091760217142" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.linkedin.com/in/melinda-koskocs%C3%A1k-0b24b4113/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </div>
   </section>
