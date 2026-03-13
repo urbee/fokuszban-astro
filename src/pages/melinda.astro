@@ -1,0 +1,123 @@
+---
+import FullWidthLayout from "../layouts/FullWidthLayout.astro";
+
+const PORTRAIT_IMAGE =
+  "https://static.wixstatic.com/media/162124_05ddbac1625b4c60b1318bd5b7b5ac97~mv2.jpg/v1/fill/w_857,h_939,al_l,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/162124_05ddbac1625b4c60b1318bd5b7b5ac97~mv2.jpg";
+const TOP_BAND_IMAGE =
+  "https://static.wixstatic.com/media/162124_999990ba1c5b4176bf027a7c99d14723~mv2.jpg/v1/fill/w_952,h_251,al_c,lg_1,q_80,enc_avif,quality_auto/162124_999990ba1c5b4176bf027a7c99d14723~mv2.jpg";
+const COMMUNITY_IMAGE =
+  "https://static.wixstatic.com/media/162124_b208414ebad541a5a0e5fc24cfb4c49b~mv2.jpg/v1/fill/w_456,h_496,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/162124_b208414ebad541a5a0e5fc24cfb4c49b~mv2.jpg";
+
+const QUALIFICATIONS = [
+  {
+    year: "2007",
+    org: "ELTE ÁJK",
+    details: ["jogi diploma"],
+  },
+  {
+    year: "2014",
+    org: "Pázmány Péter Katolikus Egyetem JÁK",
+    details: ["banki- és tőkepiaci szakjogász diploma"],
+  },
+  {
+    year: "2023",
+    org: "Szomato-pszichoterápiás Egyesület",
+    details: ["fókusztréner"],
+  },
+  {
+    year: "2025",
+    org: "Károli Gáspár Református Egyetem",
+    details: ["mentálhigiénés segítő szakember", "pszichológushallgató"],
+  },
+];
+---
+
+<FullWidthLayout title="Rólam">
+  <section class="melinda-page">
+    <div class="melinda-top-band" style={`--melinda-top-bg: url("${TOP_BAND_IMAGE}")`} aria-hidden="true"></div>
+
+    <section class="melinda-hero-wrap">
+      <div class="melinda-hero-card">
+        <div class="melinda-portrait">
+          <img src={PORTRAIT_IMAGE} alt="dr. Koskocsák Melinda" loading="eager" />
+        </div>
+
+        <div class="melinda-summary">
+          <h1>dr. Koskocsák Melinda</h1>
+
+          <ul class="melinda-roles">
+            <li>Mentálhigiénés szakember,</li>
+            <li>Pszichológushallgató (Károli Gáspár Református Egyetem),</li>
+            <li>Fókusztréner,</li>
+            <li>OH kártya instruktor</li>
+            <li>Jogász, volt polgári bíró</li>
+          </ul>
+
+          <div class="melinda-contact-mini">
+            <div><strong>Telefon:</strong></div>
+            <div>06 30 391 5306</div>
+            <div class="melinda-contact-gap"><strong>Email:</strong></div>
+            <div><a href="mailto:melinda.fokuszolas@gmail.com">melinda.fokuszolas@gmail.com</a></div>
+          </div>
+
+          <div class="melinda-social-mini">
+            <a href="https://www.facebook.com/profile.php?id=100091760217142" target="_blank" rel="noopener noreferrer">f</a>
+            <a href="https://www.linkedin.com/in/melinda-koskocs%C3%A1k-0b24b4113/" target="_blank" rel="noopener noreferrer">in</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="melinda-about">
+      <h2>Rólam</h2>
+      <p>
+        Korábban polgári vagyonjogi bíróként dolgoztam, ahol a jogszabályok keretei között hoztam a döntéseket az igazságosság jegyében. Egy
+        idő után azonban egyre jobban vágytam rá, hogy az ítélet helyét átvegye a megértés, a távolságot pedig a valódi találkozás váltsa fel.
+        Ne csupán jogi szempontból, hanem a közvetlen emberi kapcsolaton keresztül is jelen lehessek mások életében.
+      </p>
+      <p>
+        Mentálhigiénés segítőként, fókusztrénerként és OH-kártya instruktorként dolgozom. Kísérek egyéni folyamatokat és csoportokat vezetek,
+        ahol a fókuszolás és az OH-kártyák módszerei segítik az önismereti munkát. A személyközpontú, empatikus jelenlét különösen fontos
+        számomra - már nem választ el a "pulpitus", hanem valódi, támogató légkörben találkozom a hozzám fordulókkal.
+      </p>
+      <p>
+        Jelenleg a Károli Gáspár Református Egyetem pszichológushallgatója vagyok, ahol elmélyítem szakmai tudásomat és reflektív
+        szemléletemet. Két kisgyermek édesanyjaként az anyaság is meghatározó tapasztalat számomra, amely sokszor visszaköszön a segítői
+        munkámban.
+      </p>
+      <p>
+        Hiszek abban, hogy a kapcsolódásban rejlő figyelem, elfogadás és bizalom valóban gyógyító lehet - és nap mint nap ezt igyekszem
+        megteremteni a munkámban.
+      </p>
+    </section>
+
+    <section class="melinda-qualifications">
+      <h2>Végzettségeim</h2>
+      <div class="melinda-timeline">
+        {QUALIFICATIONS.map((item) => (
+          <div class="melinda-timeline-row">
+            <div class="melinda-year">{item.year}</div>
+            <div class="melinda-node" aria-hidden="true"></div>
+            <div class="melinda-degree">
+              <div class="melinda-degree-org">{item.org}</div>
+              {item.details.map((detail) => (
+                <div class="melinda-degree-detail">{detail}</div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="melinda-community">
+      <div class="melinda-community-title">
+        <h2>Közösségi<br />Média</h2>
+        <div class="melinda-community-links">
+          <a href="https://www.facebook.com/profile.php?id=100091760217142" target="_blank" rel="noopener noreferrer">f</a>
+          <a href="https://www.linkedin.com/in/melinda-koskocs%C3%A1k-0b24b4113/" target="_blank" rel="noopener noreferrer">in</a>
+        </div>
+      </div>
+      <div class="melinda-community-image" style={`--melinda-community-bg: url("${COMMUNITY_IMAGE}")`} aria-hidden="true"></div>
+    </section>
+  </section>
+</FullWidthLayout>
