@@ -822,9 +822,9 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .melinda-portrait img{
   width: 100%;
-  height: clamp(460px, 44vw, 560px);
+  height: clamp(400px, 38vw, 500px);
   object-fit: cover;
-  object-position: center 28%;
+  object-position: center 30%;
   display: block;
 }
 .melinda-summary{
@@ -834,29 +834,32 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 .melinda-summary h1{
   margin: 0 0 12px;
   text-transform: none;
-  font-size: clamp(32px, 3vw, 47px);
+  font-size: clamp(30px, 2.6vw, 42px);
   letter-spacing: 0.01em;
   line-height: 1.1;
-  font-weight: 500;
+  font-weight: 400;
 }
 .melinda-roles{
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: clamp(14px, 1.05vw, 17px);
+  font-size: clamp(13px, 0.95vw, 15px);
   line-height: 1.52;
-  font-weight: 600;
+  font-weight: 500;
 }
 .melinda-contact-mini{
   margin-top: 16px;
-  font-size: clamp(14px, 1vw, 16px);
+  font-size: clamp(13px, 0.92vw, 14px);
   line-height: 1.42;
+}
+.melinda-contact-mini strong{
+  font-weight: 600;
 }
 .melinda-contact-gap{
   margin-top: 6px;
 }
 .melinda-social-mini{
-  margin-top: 8px;
+  margin-top: 14px;
   display: flex;
   gap: 10px;
 }
@@ -864,7 +867,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   color: #111;
   text-decoration: none;
   display: inline-block;
-  font-size: 34px;
+  font-size: 27px;
   font-weight: 700;
   line-height: 1;
   font-family: Arial, Helvetica, sans-serif;
@@ -880,84 +883,103 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 .melinda-qualifications h2,
 .melinda-social-block h2{
   margin: 0 0 24px;
-  font-size: clamp(43px, 4.4vw, 64px);
-  letter-spacing: 0.14em;
+  font-size: clamp(34px, 3.2vw, 48px);
+  letter-spacing: 0.1em;
   font-weight: 700;
   text-transform: uppercase;
   border-top: 1px solid rgba(30,30,30,0.4);
   padding-top: 24px;
 }
+.melinda-about h2{
+  border-top: 0;
+  padding-top: 0;
+}
 .melinda-about p{
   margin: 0 0 22px;
-  font-size: clamp(15px, 1.08vw, 18px);
-  line-height: 1.72;
+  font-size: clamp(14px, 0.95vw, 16px);
+  line-height: 1.74;
   color: #242424;
-  max-width: 960px;
+  max-width: 780px;
+  text-align: left;
   font-weight: 400;
 }
 .melinda-qual-list{
-  list-style: disc;
+  list-style: none;
   margin: 0;
-  padding-left: 24px;
+  padding-left: 0;
   max-width: 980px;
 }
 .melinda-qual-item{
+  position: relative;
   display: grid;
   grid-template-columns: 96px 1fr;
   column-gap: 22px;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
+  padding-left: 14px;
+}
+.melinda-qual-item::before{
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #303030;
+  font-size: 14px;
+  line-height: 1;
 }
 .melinda-year{
   font-weight: 500;
   color: #303030;
-  font-size: 19px;
+  font-size: 15px;
 }
 .melinda-degree-org{
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   margin-bottom: 2px;
 }
 .melinda-degree-detail{
-  font-size: 19px;
-  line-height: 1.55;
-  font-style: italic;
+  font-size: 15px;
+  line-height: 1.45;
+  font-style: normal;
   color: #2f2f2f;
 }
 .melinda-community{
-  width: min(1220px, 100%);
-  margin: 34px auto 0;
-  padding: 0 clamp(16px, 3vw, 34px) 44px;
+  width: 100vw;
+  margin: 34px calc(50% - 50vw) 0;
+  padding: 0 0 44px;
   display: grid;
-  grid-template-columns: minmax(230px, 0.42fr) minmax(360px, 1fr);
+  grid-template-columns: minmax(240px, 360px) minmax(0, 1fr);
   align-items: stretch;
 }
 .melinda-community-title{
-  background: #ccd7db;
-  padding: clamp(18px, 3vw, 36px) clamp(16px, 3vw, 34px);
+  background:
+    linear-gradient(rgba(205, 221, 225, 0.78), rgba(205, 221, 225, 0.78)),
+    var(--melinda-community-title-bg) center / cover no-repeat;
+  padding: clamp(18px, 3vw, 32px) clamp(20px, 3.4vw, 42px);
 }
 .melinda-community h2{
   border-top: 0;
   padding-top: 0;
-  margin: 0 0 20px;
-  font-size: clamp(38px, 4vw, 58px);
-  letter-spacing: 0.12em;
+  margin: 0 0 14px;
+  font-size: clamp(28px, 3vw, 40px);
+  letter-spacing: 0.06em;
   line-height: 1.15;
+  text-transform: none;
 }
 .melinda-community-links{
   display: flex;
   gap: 14px;
 }
 .melinda-community-links a{
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
 .melinda-community-image{
-  min-height: clamp(130px, 16vw, 210px);
+  min-height: clamp(140px, 16vw, 225px);
   background:
     linear-gradient(rgba(255,255,255,0.08), rgba(255,255,255,0.08)),
-    var(--melinda-community-bg) right center / cover no-repeat;
+    var(--melinda-community-bg) center 42% / cover no-repeat;
 }
 
 @media (max-width: 900px){
@@ -1056,7 +1078,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
     font-size: 14px;
   }
   .melinda-community{
-    padding: 0 14px 20px;
+    padding: 0 0 20px;
   }
   .melinda-community h2{
     font-size: 34px;
