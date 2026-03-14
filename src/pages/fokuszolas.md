@@ -76,7 +76,15 @@ title: "Fókuszolás"
   <p class="fokuszolas-question"><strong>A:</strong> Hasonlít ez a hipnózisra?</p>
   <p><strong>M:</strong> Nem, a fókuszolás során végig éberek vagyunk. Lehet, hogy kicsit módosult tudatállapotba kerülünk, de nem veszítjük el a kontrollt - teljesen tudatában vagyunk annak, ami bennünk történik.</p>
 
-  <img class="fokuszolas-image-door" src="/wix_kepek/ajtó2.jpg" alt="Ajtó" />
+  <section class="fokuszolas-door-row">
+    <aside class="fokuszolas-quote-box" aria-label="Kiemelt idézet">
+      <p>
+        "Sokszor megérkezik egy kioldódás, megkönnyebbülés, amikor egy átélt érzet bennünk megtalálja a jelentését. Olyan, mint amikor két
+        puzzle darab végre illeszkedik és ennek megörülünk."
+      </p>
+    </aside>
+    <img class="fokuszolas-image-door" src="/wix_kepek/ajtó2.jpg" alt="Ajtó" />
+  </section>
 
   <h4>Önismereti módszerek</h4>
   <p class="fokuszolas-question"><strong>A:</strong> Kik fordulhatnak hozzád? Mikor érdemes mentálhigiénés szakemberhez fordulni?</p>

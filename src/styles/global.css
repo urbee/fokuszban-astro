@@ -203,7 +203,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .fokuszolas-page .fokuszolas-intro{
   display: grid;
-  grid-template-columns: minmax(420px, 1.22fr) minmax(230px, 310px) minmax(210px, 0.6fr);
+  grid-template-columns: 52fr 37fr 11fr;
   min-height: clamp(250px, 27vw, 320px);
   width: 100vw;
   margin: 0 calc(50% - 50vw) 24px;
@@ -212,13 +212,13 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .fokuszolas-page .fokuszolas-intro-text{
   background: #e7ddd0;
-  padding: clamp(20px, 2.8vw, 34px) clamp(20px, 2.8vw, 36px);
+  padding: clamp(20px, 2.8vw, 34px) clamp(16px, 2.4vw, 30px) clamp(20px, 2.8vw, 34px) clamp(10px, 1.6vw, 22px);
   display: flex;
   align-items: center;
 }
 .fokuszolas-page .fokuszolas-intro-copy{
   width: min(372px, 100%);
-  margin-left: clamp(8px, 1.8vw, 22px);
+  margin-left: clamp(-6px, 0.6vw, 8px);
   margin-right: auto;
 }
 .fokuszolas-page .fokuszolas-intro-title{
@@ -261,6 +261,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 .fokuszolas-page .fokuszolas-intro-side{
   background: #2c9ba0;
   margin: 0;
+  min-width: 68px;
 }
 .fokuszolas-page .fokuszolas-quote-row{
   display: grid;
@@ -270,6 +271,18 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   margin: 14px 0 20px;
 }
 .fokuszolas-page .fokuszolas-quote-row .fokuszolas-image-glass{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.fokuszolas-page .fokuszolas-door-row{
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) minmax(168px, 196px);
+  align-items: stretch;
+  gap: 0;
+  margin: 16px 0 20px;
+}
+.fokuszolas-page .fokuszolas-door-row .fokuszolas-image-door{
   width: 100%;
   height: 100%;
   margin: 0;
@@ -287,19 +300,19 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 .fokuszolas-page .fokuszolas-quote-box::before{
   content: "\201D";
   position: absolute;
-  left: 12px;
+  left: -34px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: clamp(110px, 9vw, 160px);
+  font-size: clamp(540px, 50vw, 980px);
   line-height: 1;
-  color: rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.12);
 }
 .fokuszolas-page .fokuszolas-quote-box p{
   margin: 0;
   position: relative;
   z-index: 1;
-  font-size: clamp(14px, 1vw, 16px);
-  line-height: 1.7;
+  font-size: clamp(24px, 2.2vw, 36px);
+  line-height: 1.45;
   font-style: italic;
   color: #e9f6f7;
 }
@@ -410,6 +423,14 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   }
   .fokuszolas-page .fokuszolas-quote-row{
     grid-template-columns: 1fr;
+  }
+  .fokuszolas-page .fokuszolas-door-row{
+    grid-template-columns: 1fr;
+  }
+  .fokuszolas-page .fokuszolas-door-row .fokuszolas-image-door{
+    width: min(196px, 100%);
+    height: auto;
+    margin-left: auto;
   }
   .fokuszolas-page .fokuszolas-quote-box{
     min-height: 120px;
