@@ -203,42 +203,51 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .fokuszolas-page .fokuszolas-intro{
   display: grid;
-  grid-template-columns: 1.15fr minmax(200px, 0.85fr);
-  min-height: 286px;
-  background: linear-gradient(90deg, #e7ddd0 0 72%, #56b5bb 72% 100%);
-  margin: 0 0 22px;
+  grid-template-columns: minmax(380px, 1.2fr) minmax(220px, 320px) minmax(70px, 0.22fr);
+  height: clamp(250px, 27vw, 320px);
+  width: 100vw;
+  margin: 0 calc(50% - 50vw) 24px;
 }
 .fokuszolas-page .fokuszolas-intro-text{
-  padding: clamp(24px, 3.2vw, 36px) clamp(22px, 3vw, 36px);
+  background: #e7ddd0;
+  padding: clamp(22px, 2.8vw, 34px) clamp(24px, 3vw, 42px);
 }
 .fokuszolas-page .fokuszolas-intro-title{
   margin: 0 0 8px;
-  font-size: clamp(28px, 3vw, 40px);
+  font-size: clamp(20px, 2.15vw, 30px);
   line-height: 1.14;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
+  font-family: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
+.fokuszolas-page .fokuszolas-intro-title span{
+  font-style: italic;
+  font-weight: 800;
+}
 .fokuszolas-page .fokuszolas-intro-subtitle{
-  margin: 0 0 16px;
-  font-size: 11px;
+  margin: 0 0 22px;
+  font-size: 13px;
   line-height: 1.2;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   font-weight: 700;
-  color: #555;
+  color: #7b7b7b;
 }
 .fokuszolas-page .fokuszolas-intro-lead{
   margin: 0;
   font-size: 12.5px;
-  line-height: 1.65;
+  line-height: 1.72;
   color: #222;
 }
 .fokuszolas-page .fokuszolas-intro-image{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 36%;
+  object-position: center 34%;
+}
+.fokuszolas-page .fokuszolas-intro-side{
+  background: #2c9ba0;
 }
 .fokuszolas-page h2{
   margin: 0 0 4px;
@@ -318,11 +327,19 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 @media (max-width: 760px){
   .fokuszolas-page .fokuszolas-intro{
     grid-template-columns: 1fr;
-    background: linear-gradient(180deg, #e7ddd0 0 65%, #56b5bb 65% 100%);
+    height: auto;
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  .fokuszolas-page .fokuszolas-intro-text{
+    padding: 20px 16px;
   }
   .fokuszolas-page .fokuszolas-intro-image{
     aspect-ratio: 4 / 5;
     max-height: 360px;
+  }
+  .fokuszolas-page .fokuszolas-intro-side{
+    height: 18px;
   }
 }
 .cards{ display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }

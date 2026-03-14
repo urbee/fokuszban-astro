@@ -6,7 +6,7 @@ title: "Fókuszolás"
 <section class="fokuszolas-page">
   <section class="fokuszolas-intro">
     <div class="fokuszolas-intro-text">
-      <h2 class="fokuszolas-intro-title">BESZÉLGESSÜNK AZ<br />ÖNISMERETRŐL ÉS A<br />FÓKUSZOLÁSRÓL</h2>
+      <h2 class="fokuszolas-intro-title">BESZÉLGESSÜNK AZ<br />ÖNISMERETRŐL ÉS A<br /><span>FÓKUSZOLÁSRÓL</span></h2>
       <p class="fokuszolas-intro-subtitle">MÓDSZERBEMUTATÓ INTERJÚ</p>
       <p class="fokuszolas-intro-lead">
         Hogy mindenkihez közérthetően eljuthasson mivel is foglalkozom, megkértem a férjemet, Andrást, hogy tegye fel azokat a kérdéseket,
@@ -15,6 +15,7 @@ title: "Fókuszolás"
       </p>
     </div>
     <img class="fokuszolas-intro-image" src="/wix_kepek/paros_edited.jpg" alt="Módszerbemutató interjú" />
+    <div class="fokuszolas-intro-side" aria-hidden="true"></div>
   </section>
 
   <h4>Önismeret</h4>
