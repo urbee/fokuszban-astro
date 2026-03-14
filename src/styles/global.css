@@ -201,13 +201,44 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   max-width: 820px;
   margin: 0 auto;
 }
-.fokuszolas-page .fokuszolas-hero-image{
-  width: 100%;
-  height: clamp(235px, 30vw, 340px);
-  object-fit: cover;
-  object-position: center 42%;
-  border-radius: 0;
+.fokuszolas-page .fokuszolas-intro{
+  display: grid;
+  grid-template-columns: 1.15fr minmax(200px, 0.85fr);
+  min-height: 286px;
+  background: linear-gradient(90deg, #e7ddd0 0 72%, #56b5bb 72% 100%);
   margin: 0 0 22px;
+}
+.fokuszolas-page .fokuszolas-intro-text{
+  padding: clamp(24px, 3.2vw, 36px) clamp(22px, 3vw, 36px);
+}
+.fokuszolas-page .fokuszolas-intro-title{
+  margin: 0 0 8px;
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.14;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.fokuszolas-page .fokuszolas-intro-subtitle{
+  margin: 0 0 16px;
+  font-size: 11px;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #555;
+}
+.fokuszolas-page .fokuszolas-intro-lead{
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: #222;
+}
+.fokuszolas-page .fokuszolas-intro-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 36%;
 }
 .fokuszolas-page h2{
   margin: 0 0 4px;
@@ -240,15 +271,6 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   width: 100%;
   margin: 18px 0 20px;
   border-radius: 0;
-}
-.fokuszolas-page .fokuszolas-image-intro{
-  width: min(456px, 100%);
-  height: auto;
-  display: block;
-  aspect-ratio: 456 / 496;
-  object-fit: cover;
-  object-position: 74% center;
-  margin: 16px 0 20px;
 }
 .fokuszolas-page .fokuszolas-image-glass{
   width: min(544px, 100%);
@@ -292,6 +314,16 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   margin-top: 6px;
   font-style: normal;
   font-weight: 700;
+}
+@media (max-width: 760px){
+  .fokuszolas-page .fokuszolas-intro{
+    grid-template-columns: 1fr;
+    background: linear-gradient(180deg, #e7ddd0 0 65%, #56b5bb 65% 100%);
+  }
+  .fokuszolas-page .fokuszolas-intro-image{
+    aspect-ratio: 4 / 5;
+    max-height: 360px;
+  }
 }
 .cards{ display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
 .card{ border:1px solid var(--border); border-radius: 12px; padding: 14px; }
