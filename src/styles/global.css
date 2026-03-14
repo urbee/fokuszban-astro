@@ -198,7 +198,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 .prose h1{ margin-top: 0; }
 .prose > * + *{ margin-top: 0.95rem; }
 .fokuszolas-page{
-  max-width: 880px;
+  max-width: 820px;
   margin: 0 auto;
 }
 .fokuszolas-page .fokuszolas-hero-image{
@@ -212,7 +212,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   margin: 0 0 4px;
   text-transform: none;
   letter-spacing: 0.03em;
-  font-size: clamp(30px, 3.2vw, 42px);
+  font-size: clamp(27px, 2.7vw, 36px);
   line-height: 1.2;
   font-weight: 600;
 }
@@ -220,25 +220,35 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   margin: 0 0 20px;
   text-transform: none;
   letter-spacing: 0.03em;
-  font-size: clamp(19px, 2vw, 25px);
+  font-size: clamp(17px, 1.8vw, 22px);
   font-weight: 500;
 }
 .fokuszolas-page h4{
   margin: 30px 0 10px;
-  font-size: 28px;
+  font-size: 24px;
   letter-spacing: 0.01em;
   font-weight: 500;
 }
 .fokuszolas-page p{
   margin: 0 0 14px;
-  line-height: 1.78;
+  line-height: 1.72;
   color: #222;
-  font-size: 16px;
+  font-size: 15px;
 }
 .fokuszolas-page img{
   width: 100%;
   margin: 18px 0 20px;
   border-radius: 0;
+}
+.fokuszolas-page .fokuszolas-image-medium{
+  width: min(560px, 100%);
+  display: block;
+  margin: 16px 0 18px;
+}
+.fokuszolas-page .fokuszolas-image-narrow{
+  width: min(300px, 100%);
+  display: block;
+  margin: 16px 0 18px;
 }
 .fokuszolas-page blockquote{
   margin: 16px 0 22px;
@@ -246,8 +256,9 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   border-left: 0;
   background: transparent;
   font-style: normal;
-  line-height: 1.75;
+  line-height: 1.7;
   color: #252525;
+  font-size: 15px;
 }
 .fokuszolas-page blockquote cite{
   display: block;
