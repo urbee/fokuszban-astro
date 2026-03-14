@@ -110,43 +110,49 @@ title: "Fókuszolás"
     <a href="https://focusing.org/" target="_blank" rel="noopener noreferrer">focusing.org</a>
   </p>
 
-  <h3>Korábbi résztvevők a fókuszolásról és rólunk</h3>
-  <img class="fokuszolas-image-participants" src="/wix_kepek/paros.jpg" alt="Korábbi résztvevők" />
+  <section class="fokuszolas-participants">
+    <div class="fokuszolas-participants-head">
+      <h3 class="fokuszolas-participants-title">KORÁBBI RÉSZTVEVŐK<br />A <span>FÓKUSZOLÁSRÓL</span> ÉS RÓLUNK</h3>
+      <img class="fokuszolas-image-participants" src="/wix_kepek/paros.jpg" alt="Korábbi résztvevők" />
+    </div>
 
-  <blockquote>
-    "A 2 napos fókuszálás segített megtalálni magamban egy lelki békét, csendet, megadta az elmélyülés lehetőségét. Sikerült pár órára
-    kizárni a fejemből a zajos hétköznapokat, így teret adva gondolataim rendezésének."
-    <cite>Andi</cite>
-  </blockquote>
+    <div class="fokuszolas-participants-quotes">
+      <blockquote>
+        "A 2 napos fókuszálás segített megtalálni magamban egy lelki békét, csendet, megadta az elmélyülés lehetőségét. Sikerült pár órára
+        kizárni a fejemből a zajos hétköznapokat, így teret adva gondolataim rendezésének."
+        <cite>Andi</cite>
+      </blockquote>
 
-  <blockquote>
-    "Különleges élmény volt nemcsak megízlelni, megszagolni, megtapogatni, de meghallgatni is egy mazsolaszemet. Olyan sok apró öröm,
-    felfedeznivaló rejlik egy szem aszalt szőlőben."
-    <cite>Zsuzsi</cite>
-  </blockquote>
+      <blockquote>
+        "Különleges élmény volt nemcsak megízlelni, megszagolni, megtapogatni, de meghallgatni is egy mazsolaszemet. Olyan sok apró öröm,
+        felfedeznivaló rejlik egy szem aszalt szőlőben."
+        <cite>Zsuzsi</cite>
+      </blockquote>
 
-  <blockquote>
-    "Olyan élményben volt részem, amit nem tudok úgy kifejezni, hogy abból mások, akik nem voltak ott, átérezhessék, hogy mennyire
-    megváltozott az életszemléletem. Nem azt mondom, hogy jobb lett az életem, hanem azt, hogy az elakadásaimat, a mindig újratermelődő
-    rossz működésemet más szemmel látom, és már nem megoldhatatlan reménytelenségként élem meg."
-    <cite>Kati</cite>
-  </blockquote>
+      <blockquote>
+        "Olyan élményben volt részem, amit nem tudok úgy kifejezni, hogy abból mások, akik nem voltak ott, átérezhessék, hogy mennyire
+        megváltozott az életszemléletem. Nem azt mondom, hogy jobb lett az életem, hanem azt, hogy az elakadásaimat, a mindig újratermelődő
+        rossz működésemet más szemmel látom, és már nem megoldhatatlan reménytelenségként élem meg."
+        <cite>Kati</cite>
+      </blockquote>
 
-  <blockquote>
-    "Biztonságos és barátságos légkörben tartották a hétvégi fókuszolós workshopot. Tetszettek a változatos és élményszerű feladatok,
-    a fókuszolás módszere pedig közelebb vitt önmagamhoz. A csendes figyelemben eltöltött idő másoknak is segíthet az önismeret útján."
-    <cite>István</cite>
-  </blockquote>
+      <blockquote>
+        "Biztonságos és barátságos légkörben tartották a hétvégi fókuszolós workshopot. Tetszettek a változatos és élményszerű feladatok,
+        a fókuszolás módszere pedig közelebb vitt önmagamhoz. A csendes figyelemben eltöltött idő másoknak is segíthet az önismeret útján."
+        <cite>István</cite>
+      </blockquote>
 
-  <blockquote>
-    "Nagyon felkészült és kedves csoportvezetőt ismertem meg a személyedben. Jól éreztem magam a csoportban, sokat tett hozzá az
-    önismeretemhez, és inspirált, hogy mélyebben is megismerkedjek ezzel a fantasztikus módszerrel."
-    <cite>György</cite>
-  </blockquote>
+      <blockquote>
+        "Nagyon felkészült és kedves csoportvezetőt ismertem meg a személyedben. Jól éreztem magam a csoportban, sokat tett hozzá az
+        önismeretemhez, és inspirált, hogy mélyebben is megismerkedjek ezzel a fantasztikus módszerrel."
+        <cite>György</cite>
+      </blockquote>
 
-  <blockquote>
-    "A pálferis honlapon keresztül találtam a csoportra, ott regisztráltam a májusi fókuszolós hétvégére. Minden túlzás nélkül ilyen
-    elfogadó közegben még nem voltam. Nagyon köszönöm."
-    <cite>Zoli</cite>
-  </blockquote>
+      <blockquote>
+        "A pálferis honlapon keresztül találtam a csoportra, ott regisztráltam a májusi fókuszolós hétvégére. Minden túlzás nélkül ilyen
+        elfogadó közegben még nem voltam. Nagyon köszönöm."
+        <cite>Zoli</cite>
+      </blockquote>
+    </div>
+  </section>
 </section>

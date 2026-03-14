@@ -203,7 +203,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .fokuszolas-page .fokuszolas-intro{
   display: grid;
-  grid-template-columns: 52fr 37fr 11fr;
+  grid-template-columns: 59fr 30fr 11fr;
   min-height: clamp(250px, 27vw, 320px);
   width: 100vw;
   margin: 0 calc(50% - 50vw) 24px;
@@ -265,7 +265,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .fokuszolas-page .fokuszolas-quote-row{
   display: grid;
-  grid-template-columns: minmax(320px, 544px) minmax(210px, 1fr);
+  grid-template-columns: 56fr 44fr;
   align-items: stretch;
   gap: 0;
   margin: 14px 0 20px;
@@ -311,8 +311,8 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   margin: 0;
   position: relative;
   z-index: 1;
-  font-size: clamp(24px, 2.2vw, 36px);
-  line-height: 1.45;
+  font-size: clamp(17px, 1.6vw, 25px);
+  line-height: 1.5;
   font-style: italic;
   color: #e9f6f7;
 }
@@ -383,6 +383,49 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   object-position: 58% center;
   margin: 16px 0 20px;
 }
+.fokuszolas-page .fokuszolas-participants{
+  margin: 24px 0 0;
+  padding: clamp(22px, 2.6vw, 32px) clamp(16px, 2.5vw, 30px) clamp(18px, 2.3vw, 28px);
+  background: #e8dfd1;
+}
+.fokuszolas-page .fokuszolas-participants-head{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 18px;
+}
+.fokuszolas-page .fokuszolas-participants-title{
+  margin: 0;
+  color: #2b8f95;
+  font-size: clamp(24px, 2.4vw, 31px);
+  line-height: 1.18;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.fokuszolas-page .fokuszolas-participants-title span{
+  font-style: italic;
+}
+.fokuszolas-page .fokuszolas-participants .fokuszolas-image-participants{
+  width: clamp(110px, 15vw, 170px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  margin: 0;
+}
+.fokuszolas-page .fokuszolas-participants-quotes{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 26px;
+  margin-top: 16px;
+}
+.fokuszolas-page .fokuszolas-participants-quotes blockquote{
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.62;
+}
+.fokuszolas-page .fokuszolas-participants-quotes blockquote cite{
+  margin-top: 5px;
+}
 .fokuszolas-page blockquote{
   margin: 16px 0 22px;
   padding: 0;
@@ -431,6 +474,18 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
     width: min(196px, 100%);
     height: auto;
     margin-left: auto;
+  }
+  .fokuszolas-page .fokuszolas-participants-head{
+    grid-template-columns: 1fr;
+  }
+  .fokuszolas-page .fokuszolas-participants .fokuszolas-image-participants{
+    justify-self: end;
+    width: clamp(98px, 30vw, 132px);
+    margin-top: 8px;
+  }
+  .fokuszolas-page .fokuszolas-participants-quotes{
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
   .fokuszolas-page .fokuszolas-quote-box{
     min-height: 120px;
