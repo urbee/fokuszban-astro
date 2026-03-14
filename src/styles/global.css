@@ -203,11 +203,11 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .fokuszolas-page .fokuszolas-hero-image{
   width: 100%;
-  height: clamp(220px, 29vw, 320px);
+  height: clamp(235px, 30vw, 340px);
   object-fit: cover;
-  object-position: center 48%;
+  object-position: center 42%;
   border-radius: 0;
-  margin: 0 0 26px;
+  margin: 0 0 22px;
 }
 .fokuszolas-page h2{
   margin: 0 0 4px;

@@ -4,7 +4,7 @@ title: "Fókuszolás"
 ---
 
 <section class="fokuszolas-page">
-  <img class="fokuszolas-hero-image" src="/wix_kepek/84770f_0cf5b6c1550a4b8c92f92f1064cc68de~mv2.jpg" alt="Fókuszolás fejléckép" />
+  <img class="fokuszolas-hero-image" src="/wix_kepek/focus_blue_bg_3.jpg" alt="Fókuszolás fejléckép" />
 
   <h2>beszélgessünk az önismeretről és a fókuszolásról</h2>
   <h3>módszerbemutató interjú</h3>
