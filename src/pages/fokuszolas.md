@@ -57,6 +57,18 @@ title: "Fókuszolás"
 
   <p><strong>A:</strong> Lehet ez furcsa annak, aki racionális típus. Mit jelent az, hogy a kép illeszkedik az érzethez?</p>
   <p><strong>M:</strong> Ha egy kép vagy emlék valóban kapcsolódik az átélt érzethez akkor az változik. Oldódhat, enyhülhet, és ez sokszor megkönnyebbülést hoz - mint amikor két puzzle-darab végre összeillik.</p>
+  <p><strong>A:</strong> Azt mondod, hogy ilyenkor kitágítjuk a figyelmünket. Ez azt jelenti, hogy egy dologra koncentrálunk, de mélyebben?</p>
+  <p><strong>M:</strong> Nem egyetlen pontra irányítjuk a figyelmet, hanem tágabb térben érzékelünk. Mintha egy belső tájat pásztáznánk: először közelről figyelek valamire, majd egyre több részletet veszek észre. Ez a figyelem egyfajta mozgása.</p>
+  <p><strong>A:</strong> Tehát nem kikapcsoljuk az érzékszerveket, hanem inkább bekapcsoljuk őket?</p>
+  <p><strong>M:</strong> Pontosan. Testpásztázással kezdünk - végigvezetjük a figyelmünket a testünkön, és hagyjuk, hogy megjelenjen, ami ott van. Egy szorító érzés, nyomás, feszültség, vagy bármi. Ezek az érzetek finomak, gomolygóak, elsőre talán megfoghatatlanok, de ha velük maradunk, kibontakozhat mögöttük egy élmény, emlék vagy gondolat, ami eddig rejtve maradt.</p>
+  <p><strong>A:</strong> Ha például megjelenik egy gyomorszorító érzés, akkor azt figyeljük?</p>
+  <p><strong>M:</strong> Igen, észrevesszük, hogyan változik, miközben figyelünk rá. Lehet, hogy felidéz egy gyerekkori emléket, egy illatot - valamit, ami összekapcsolódik az érzettel. Ez az élmény személyes, senki más nem tudja megmondani, mit jelent - ez a fókuszolás lényege: a saját belső bölcsességünkhöz kapcsolódunk.</p>
+  <p><strong>A:</strong> És ez a változás az, amitől jobban leszek?</p>
+  <p><strong>M:</strong> Igen, de ez nem mindig látványos. Van, hogy egy felismerés érkezik, máskor csak egy finom elmozdulás. Nem mindig értjük elsőre, mi történt, de a folyamat elindul - lehet, hogy később, álomban vagy egy új helyzetben bontakozik ki.</p>
+  <p><strong>A:</strong> Akkor ez segíthet abban is, hogy tudatosabban reagáljak a hétköznapi helyzetekre?</p>
+  <p><strong>M:</strong> Igen, például ha stresszhelyzetben automatikusan nassolnál, fókuszolással ezt észreveheted, és dönthetsz másként, iszol egy pohár vizet vagy csak megállsz egy percre. Ez egy újfajta tudatosság a mindennapokban.</p>
+  <p><strong>A:</strong> Hasonlít ez a hipnózisra?</p>
+  <p><strong>M:</strong> Nem, a fókuszolás során végig éberek vagyunk. Lehet, hogy kicsit módosult tudatállapotba kerülünk, de nem veszítjük el a kontrollt - teljesen tudatában vagyunk annak, ami bennünk történik.</p>
 
   <img src="/wix_kepek/ajtó2.jpg" alt="Ajtó" />
 
@@ -91,6 +103,25 @@ title: "Fókuszolás"
     "A 2 napos fókuszálás segített megtalálni magamban egy lelki békét, csendet, megadta az elmélyülés lehetőségét. Sikerült pár órára
     kizárni a fejemből a zajos hétköznapokat, így teret adva gondolataim rendezésének."
     <cite>Andi</cite>
+  </blockquote>
+
+  <blockquote>
+    "Különleges élmény volt nemcsak megízlelni, megszagolni, megtapogatni, de meghallgatni is egy mazsolaszemet. Olyan sok apró öröm,
+    felfedeznivaló rejlik egy szem aszalt szőlőben."
+    <cite>Zsuzsi</cite>
+  </blockquote>
+
+  <blockquote>
+    "Olyan élményben volt részem, amit nem tudok úgy kifejezni, hogy abból mások, akik nem voltak ott, átérezhessék, hogy mennyire
+    megváltozott az életszemléletem. Nem azt mondom, hogy jobb lett az életem, hanem azt, hogy az elakadásaimat, a mindig újratermelődő
+    rossz működésemet más szemmel látom, és már nem megoldhatatlan reménytelenségként élem meg."
+    <cite>Kati</cite>
+  </blockquote>
+
+  <blockquote>
+    "Biztonságos és barátságos légkörben tartották a hétvégi fókuszolós workshopot. Tetszettek a változatos és élményszerű feladatok,
+    a fókuszolás módszere pedig közelebb vitt önmagamhoz. A csendes figyelemben eltöltött idő másoknak is segíthet az önismeret útján."
+    <cite>István</cite>
   </blockquote>
 
   <blockquote>
