@@ -203,11 +203,12 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .fokuszolas-page .fokuszolas-intro{
   display: grid;
-  grid-template-columns: minmax(380px, 1.2fr) minmax(220px, 320px) minmax(70px, 0.22fr);
+  grid-template-columns: minmax(420px, 1.28fr) minmax(230px, 310px) minmax(66px, 0.18fr);
   min-height: clamp(250px, 27vw, 320px);
   width: 100vw;
   margin: 0 calc(50% - 50vw) 24px;
   align-items: stretch;
+  overflow: hidden;
 }
 .fokuszolas-page .fokuszolas-intro-text{
   background: #e7ddd0;
@@ -216,13 +217,13 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   align-items: center;
 }
 .fokuszolas-page .fokuszolas-intro-copy{
-  width: min(340px, 100%);
-  margin-left: clamp(20px, 4vw, 54px);
+  width: min(372px, 100%);
+  margin-left: clamp(36px, 5.4vw, 78px);
   margin-right: auto;
 }
 .fokuszolas-page .fokuszolas-intro-title{
   margin: 0 0 8px;
-  font-size: clamp(20px, 2.15vw, 30px);
+  font-size: clamp(19px, 2vw, 28px);
   line-height: 1.14;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -234,29 +235,32 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   font-weight: 800;
 }
 .fokuszolas-page .fokuszolas-intro-subtitle{
-  margin: 0 0 28px;
-  font-size: 13px;
+  margin: 0 0 34px;
+  font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   font-weight: 700;
-  color: #7b7b7b;
+  color: #8a8a8a;
 }
 .fokuszolas-page .fokuszolas-intro-lead{
   margin: 0;
-  font-size: 12.5px;
-  line-height: 1.72;
+  font-size: 13.5px;
+  line-height: 1.8;
   color: #222;
-  max-width: 320px;
+  max-width: 352px;
 }
 .fokuszolas-page .fokuszolas-intro-image{
   width: 100%;
   height: 100%;
+  display: block;
+  margin: 0;
   object-fit: cover;
-  object-position: center 34%;
+  object-position: center 38%;
 }
 .fokuszolas-page .fokuszolas-intro-side{
   background: #2c9ba0;
+  margin: 0;
 }
 .fokuszolas-page h2{
   margin: 0 0 4px;
@@ -289,6 +293,9 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   width: 100%;
   margin: 18px 0 20px;
   border-radius: 0;
+}
+.fokuszolas-page .fokuszolas-intro .fokuszolas-intro-image{
+  margin: 0;
 }
 .fokuszolas-page .fokuszolas-image-glass{
   width: min(544px, 100%);
