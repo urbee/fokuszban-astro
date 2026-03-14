@@ -880,7 +880,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   padding: 52px clamp(16px, 3vw, 34px) 0;
 }
 .melinda-qualifications{
-  padding-bottom: clamp(28px, 3.2vw, 44px);
+  padding-bottom: clamp(72px, 9vw, 130px);
 }
 .melinda-about,
 .melinda-qualifications{
