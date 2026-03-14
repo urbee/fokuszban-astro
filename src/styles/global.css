@@ -751,6 +751,9 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   font-weight: 800;
   margin: 0 0 30px;
 }
+#szolgaltatasok-cim{
+  scroll-margin-top: 185px;
+}
 .services-grid{
   display:grid;
   grid-template-columns: repeat(3, minmax(260px, 1fr));
