@@ -10,6 +10,7 @@
 }
 *{ box-sizing:border-box; }
 html,body{ margin:0; padding:0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color:var(--fg); background:var(--bg); }
+html{ scroll-behavior: smooth; }
 body{
   line-height: 1.58;
   -webkit-font-smoothing: antialiased;
@@ -102,6 +103,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   background: #65c6cd;
   color: #0f2f34;
   padding: clamp(24px, 3.2vw, 38px) 0 clamp(22px, 3vw, 34px);
+  scroll-margin-top: 120px;
 }
 .site-footer-inner{
   display: grid;
