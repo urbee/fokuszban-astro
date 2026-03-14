@@ -21,7 +21,7 @@ title: "Fókuszolás"
   </section>
 
   <h4>Önismeret</h4>
-  <p><strong>András:</strong> Kezdjük is az elejéről. A fókuszolás egy önismereti módszer, ha jól értem. Elmondanád, mit értesz önismeret alatt?</p>
+  <p class="fokuszolas-question"><strong>András:</strong> Kezdjük is az elejéről. A fókuszolás egy önismereti módszer, ha jól értem. Elmondanád, mit értesz önismeret alatt?</p>
   <p>
     <strong>Melinda:</strong> Az önismeret számomra azt jelenti, hogy fokozatosan egyre tisztábban látjuk, kik vagyunk, mire van szükségünk,
     hogyan működünk a mindennapokban - és ez irányt ad az életünknek.
@@ -31,15 +31,18 @@ title: "Fókuszolás"
     szempontjainkat.
   </p>
 
-  <img class="fokuszolas-image-glass" src="/wix_kepek/glass-sphere-1746506_1280.jpg" alt="Glass sphere" />
-
-  <blockquote>
-    "Egy nagyon természetes módszer, aminek az alapja, hogy megadjuk magunknak azt a figyelmet, amit a hétköznapokban nem teszünk meg,
-    a magunkkal együttlevés élményét."
-  </blockquote>
+  <section class="fokuszolas-quote-row">
+    <img class="fokuszolas-image-glass" src="/wix_kepek/glass-sphere-1746506_1280.jpg" alt="Glass sphere" />
+    <aside class="fokuszolas-quote-box" aria-label="Kiemelt idézet">
+      <p>
+        "Egy nagyon természetes módszer, aminek az alapja, hogy megadjuk magunknak azt a figyelmet, amit a hétköznapokban nem teszünk meg,
+        a magunkkal együttlevés élményét."
+      </p>
+    </aside>
+  </section>
 
   <h4>Fókuszolás</h4>
-  <p><strong>A:</strong> Mesélnél a fókuszolás szemléletéről és arról, hogyan tud a fókuszolás új felismerésekhez segíteni?</p>
+  <p class="fokuszolas-question"><strong>A:</strong> Mesélnél a fókuszolás szemléletéről és arról, hogyan tud a fókuszolás új felismerésekhez segíteni?</p>
   <p>
     <strong>M:</strong> Fókuszolással időt szánunk arra, ami bennünk zajlik. Általában ülő testhelyzetben, lecsendesedett állapotban, a testünket
     segítségül hívva figyelünk befelé. Egy téma, kérdés kapcsán felmerülő testérzetek összessége segít abban, hogy mögé nézzünk az adott
@@ -51,44 +54,44 @@ title: "Fókuszolás"
     egy belső iránytű lehet döntéshelyzetekben és az élet számos területén jól lehet alkalmazni.
   </p>
 
-  <p><strong>A:</strong> Ha jól értem, a fókuszolás nem olyan, mint amikor az utcán sétálva a bevásárlólistára figyelek. Inkább egyfajta befelé fordulás. Mire figyelünk ilyenkor?</p>
+  <p class="fokuszolas-question"><strong>A:</strong> Ha jól értem, a fókuszolás nem olyan, mint amikor az utcán sétálva a bevásárlólistára figyelek. Inkább egyfajta befelé fordulás. Mire figyelünk ilyenkor?</p>
   <p>
     <strong>M:</strong> Igen, a fókuszolásban nem a hétköznapi racionális figyelmet használjuk. Itt a jobb agyfélteke aktívabb, amivel az
     élményszinthez kapcsolódunk. Az ellazultság sokszor megjelenik, de nem cél - inkább egy figyelemváltásról van szó, tágítjuk a figyelmünket
     kifelé vagy befelé: teret adunk annak, ami épp bennünk van.
   </p>
 
-  <p><strong>A:</strong> Lehet ez furcsa annak, aki racionális típus. Mit jelent az, hogy a kép illeszkedik az érzethez?</p>
+  <p class="fokuszolas-question"><strong>A:</strong> Lehet ez furcsa annak, aki racionális típus. Mit jelent az, hogy a kép illeszkedik az érzethez?</p>
   <p><strong>M:</strong> Ha egy kép vagy emlék valóban kapcsolódik az átélt érzethez akkor az változik. Oldódhat, enyhülhet, és ez sokszor megkönnyebbülést hoz - mint amikor két puzzle-darab végre összeillik.</p>
-  <p><strong>A:</strong> Azt mondod, hogy ilyenkor kitágítjuk a figyelmünket. Ez azt jelenti, hogy egy dologra koncentrálunk, de mélyebben?</p>
+  <p class="fokuszolas-question"><strong>A:</strong> Azt mondod, hogy ilyenkor kitágítjuk a figyelmünket. Ez azt jelenti, hogy egy dologra koncentrálunk, de mélyebben?</p>
   <p><strong>M:</strong> Nem egyetlen pontra irányítjuk a figyelmet, hanem tágabb térben érzékelünk. Mintha egy belső tájat pásztáznánk: először közelről figyelek valamire, majd egyre több részletet veszek észre. Ez a figyelem egyfajta mozgása.</p>
-  <p><strong>A:</strong> Tehát nem kikapcsoljuk az érzékszerveket, hanem inkább bekapcsoljuk őket?</p>
+  <p class="fokuszolas-question"><strong>A:</strong> Tehát nem kikapcsoljuk az érzékszerveket, hanem inkább bekapcsoljuk őket?</p>
   <p><strong>M:</strong> Pontosan. Testpásztázással kezdünk - végigvezetjük a figyelmünket a testünkön, és hagyjuk, hogy megjelenjen, ami ott van. Egy szorító érzés, nyomás, feszültség, vagy bármi. Ezek az érzetek finomak, gomolygóak, elsőre talán megfoghatatlanok, de ha velük maradunk, kibontakozhat mögöttük egy élmény, emlék vagy gondolat, ami eddig rejtve maradt.</p>
-  <p><strong>A:</strong> Ha például megjelenik egy gyomorszorító érzés, akkor azt figyeljük?</p>
+  <p class="fokuszolas-question"><strong>A:</strong> Ha például megjelenik egy gyomorszorító érzés, akkor azt figyeljük?</p>
   <p><strong>M:</strong> Igen, észrevesszük, hogyan változik, miközben figyelünk rá. Lehet, hogy felidéz egy gyerekkori emléket, egy illatot - valamit, ami összekapcsolódik az érzettel. Ez az élmény személyes, senki más nem tudja megmondani, mit jelent - ez a fókuszolás lényege: a saját belső bölcsességünkhöz kapcsolódunk.</p>
-  <p><strong>A:</strong> És ez a változás az, amitől jobban leszek?</p>
+  <p class="fokuszolas-question"><strong>A:</strong> És ez a változás az, amitől jobban leszek?</p>
   <p><strong>M:</strong> Igen, de ez nem mindig látványos. Van, hogy egy felismerés érkezik, máskor csak egy finom elmozdulás. Nem mindig értjük elsőre, mi történt, de a folyamat elindul - lehet, hogy később, álomban vagy egy új helyzetben bontakozik ki.</p>
-  <p><strong>A:</strong> Akkor ez segíthet abban is, hogy tudatosabban reagáljak a hétköznapi helyzetekre?</p>
+  <p class="fokuszolas-question"><strong>A:</strong> Akkor ez segíthet abban is, hogy tudatosabban reagáljak a hétköznapi helyzetekre?</p>
   <p><strong>M:</strong> Igen, például ha stresszhelyzetben automatikusan nassolnál, fókuszolással ezt észreveheted, és dönthetsz másként, iszol egy pohár vizet vagy csak megállsz egy percre. Ez egy újfajta tudatosság a mindennapokban.</p>
-  <p><strong>A:</strong> Hasonlít ez a hipnózisra?</p>
+  <p class="fokuszolas-question"><strong>A:</strong> Hasonlít ez a hipnózisra?</p>
   <p><strong>M:</strong> Nem, a fókuszolás során végig éberek vagyunk. Lehet, hogy kicsit módosult tudatállapotba kerülünk, de nem veszítjük el a kontrollt - teljesen tudatában vagyunk annak, ami bennünk történik.</p>
 
   <img class="fokuszolas-image-door" src="/wix_kepek/ajtó2.jpg" alt="Ajtó" />
 
   <h4>Önismereti módszerek</h4>
-  <p><strong>A:</strong> Kik fordulhatnak hozzád? Mikor érdemes mentálhigiénés szakemberhez fordulni?</p>
+  <p class="fokuszolas-question"><strong>A:</strong> Kik fordulhatnak hozzád? Mikor érdemes mentálhigiénés szakemberhez fordulni?</p>
   <p>
     <strong>M:</strong> Egészséges emberek, akik ugyan nehézségekkel küzdenek - például szoronganak, párkapcsolati nehézségeik vannak,
     veszteség érte őket, de a mindennapi életvitelük még működik. Ők fordulhatnak mentálhigiénés szakemberhez vagy pszichológushoz is.
   </p>
 
-  <p><strong>A:</strong> És miben más a mentálhigiénés segítő mint a pszichológus?</p>
+  <p class="fokuszolas-question"><strong>A:</strong> És miben más a mentálhigiénés segítő mint a pszichológus?</p>
   <p>
     <strong>M:</strong> A mentálhigiénés szakember nem diagnosztizál és nem kezel betegségeket. Abban segít, hogy a kliens a saját erőforrásaira
     támaszkodva mozduljon el egy kiegyensúlyozottabb lelkiállapot felé.
   </p>
 
-  <p><strong>A:</strong> Mikor javasolt az egyéni munka, és mikor inkább csoport?</p>
+  <p class="fokuszolas-question"><strong>A:</strong> Mikor javasolt az egyéni munka, és mikor inkább csoport?</p>
   <p>
     <strong>M:</strong> Ha valaki saját, személyes témáival szeretne dolgozni mélyebben, akkor az egyéni folyamatot ajánljuk. A csoportfolyamat
     más típusú élményt ad: sokszor megtapasztalható, hogy nem vagyunk egyedül egy-egy nehézséggel, ami felszabadító és megerősítő élmény.
