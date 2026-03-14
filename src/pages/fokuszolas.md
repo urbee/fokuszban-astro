@@ -15,7 +15,7 @@ title: "Fókuszolás"
     valószínűleg még sosem.
   </p>
 
-  <img class="fokuszolas-image-medium" src="/wix_kepek/Meli_plus_meditalok.jpg" alt="Módszerbemutató interjú" />
+  <img class="fokuszolas-image-intro" src="/wix_kepek/Meli_plus_meditalok.jpg" alt="Módszerbemutató interjú" />
 
   <h4>Önismeret</h4>
   <p><strong>András:</strong> Kezdjük is az elejéről. A fókuszolás egy önismereti módszer, ha jól értem. Elmondanád, mit értesz önismeret alatt?</p>
@@ -28,7 +28,7 @@ title: "Fókuszolás"
     szempontjainkat.
   </p>
 
-  <img class="fokuszolas-image-medium" src="/wix_kepek/glass-sphere-1746506_1280.jpg" alt="Glass sphere" />
+  <img class="fokuszolas-image-glass" src="/wix_kepek/glass-sphere-1746506_1280.jpg" alt="Glass sphere" />
 
   <blockquote>
     "Egy nagyon természetes módszer, aminek az alapja, hogy megadjuk magunknak azt a figyelmet, amit a hétköznapokban nem teszünk meg,
@@ -70,7 +70,7 @@ title: "Fókuszolás"
   <p><strong>A:</strong> Hasonlít ez a hipnózisra?</p>
   <p><strong>M:</strong> Nem, a fókuszolás során végig éberek vagyunk. Lehet, hogy kicsit módosult tudatállapotba kerülünk, de nem veszítjük el a kontrollt - teljesen tudatában vagyunk annak, ami bennünk történik.</p>
 
-  <img class="fokuszolas-image-narrow" src="/wix_kepek/ajtó2.jpg" alt="Ajtó" />
+  <img class="fokuszolas-image-door" src="/wix_kepek/ajtó2.jpg" alt="Ajtó" />
 
   <h4>Önismereti módszerek</h4>
   <p><strong>A:</strong> Kik fordulhatnak hozzád? Mikor érdemes mentálhigiénés szakemberhez fordulni?</p>
@@ -97,7 +97,7 @@ title: "Fókuszolás"
   </p>
 
   <h3>Korábbi résztvevők a fókuszolásról és rólunk</h3>
-  <img class="fokuszolas-image-narrow" src="/wix_kepek/paros.jpg" alt="Korábbi résztvevők" />
+  <img class="fokuszolas-image-participants" src="/wix_kepek/paros.jpg" alt="Korábbi résztvevők" />
 
   <blockquote>
     "A 2 napos fókuszálás segített megtalálni magamban egy lelki békét, csendet, megadta az elmélyülés lehetőségét. Sikerült pár órára

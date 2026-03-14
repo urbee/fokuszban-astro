@@ -203,8 +203,9 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .fokuszolas-page .fokuszolas-hero-image{
   width: 100%;
-  max-height: 280px;
+  height: clamp(220px, 29vw, 320px);
   object-fit: cover;
+  object-position: center 48%;
   border-radius: 0;
   margin: 0 0 26px;
 }
@@ -240,15 +241,41 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   margin: 18px 0 20px;
   border-radius: 0;
 }
-.fokuszolas-page .fokuszolas-image-medium{
-  width: min(560px, 100%);
+.fokuszolas-page .fokuszolas-image-intro{
+  width: min(456px, 100%);
+  height: auto;
   display: block;
-  margin: 16px 0 18px;
+  aspect-ratio: 456 / 496;
+  object-fit: cover;
+  object-position: 74% center;
+  margin: 16px 0 20px;
 }
-.fokuszolas-page .fokuszolas-image-narrow{
-  width: min(300px, 100%);
+.fokuszolas-page .fokuszolas-image-glass{
+  width: min(544px, 100%);
+  height: auto;
   display: block;
-  margin: 16px 0 18px;
+  aspect-ratio: 544 / 359;
+  object-fit: cover;
+  object-position: center center;
+  margin: 16px 0 20px;
+}
+.fokuszolas-page .fokuszolas-image-door{
+  width: min(196px, 100%);
+  height: auto;
+  display: block;
+  aspect-ratio: 196 / 257;
+  object-fit: cover;
+  object-position: center center;
+  margin: 16px 0 20px;
+}
+.fokuszolas-page .fokuszolas-image-participants{
+  width: min(264px, 100%);
+  height: auto;
+  display: block;
+  aspect-ratio: 264 / 313;
+  object-fit: cover;
+  object-position: 58% center;
+  margin: 16px 0 20px;
 }
 .fokuszolas-page blockquote{
   margin: 16px 0 22px;
