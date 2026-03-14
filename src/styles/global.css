@@ -212,13 +212,13 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .fokuszolas-page .fokuszolas-intro-text{
   background: #e7ddd0;
-  padding: clamp(20px, 2.8vw, 34px) clamp(16px, 2.4vw, 30px) clamp(20px, 2.8vw, 34px) clamp(10px, 1.6vw, 22px);
+  padding: clamp(20px, 2.8vw, 34px) clamp(16px, 2.4vw, 30px) clamp(20px, 2.8vw, 34px) clamp(16px, 2.2vw, 34px);
   display: flex;
   align-items: center;
 }
 .fokuszolas-page .fokuszolas-intro-copy{
   width: min(372px, 100%);
-  margin-left: clamp(-6px, 0.6vw, 8px);
+  margin-left: clamp(38px, 4vw, 86px);
   margin-right: auto;
 }
 .fokuszolas-page .fokuszolas-intro-title{
@@ -384,15 +384,20 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   margin: 16px 0 20px;
 }
 .fokuszolas-page .fokuszolas-participants{
-  margin: 24px 0 0;
-  padding: clamp(22px, 2.6vw, 32px) clamp(16px, 2.5vw, 30px) clamp(18px, 2.3vw, 28px);
+  width: 100vw;
+  margin: 24px calc(50% - 50vw) 0;
+  padding: clamp(22px, 2.6vw, 32px) 0 clamp(18px, 2.3vw, 28px);
   background: #e8dfd1;
+}
+.fokuszolas-page .fokuszolas-participants-inner{
+  width: min(1020px, 100% - 48px);
+  margin: 0 auto;
 }
 .fokuszolas-page .fokuszolas-participants-head{
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: start;
-  gap: 18px;
+  gap: 20px;
 }
 .fokuszolas-page .fokuszolas-participants-title{
   margin: 0;
@@ -407,24 +412,29 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   font-style: italic;
 }
 .fokuszolas-page .fokuszolas-participants .fokuszolas-image-participants{
-  width: clamp(110px, 15vw, 170px);
+  width: clamp(180px, 18vw, 232px);
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   margin: 0;
+  object-position: center;
 }
 .fokuszolas-page .fokuszolas-participants-quotes{
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px 26px;
-  margin-top: 16px;
+  gap: 10px 36px;
+  margin-top: 14px;
 }
 .fokuszolas-page .fokuszolas-participants-quotes blockquote{
-  margin: 0 0 12px;
-  font-size: 14px;
-  line-height: 1.62;
+  margin: 0 0 10px;
+  font-size: 15px;
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+  color: #2d2d2d;
 }
 .fokuszolas-page .fokuszolas-participants-quotes blockquote cite{
   margin-top: 5px;
+  font-size: 15px;
+  font-weight: 700;
 }
 .fokuszolas-page blockquote{
   margin: 16px 0 22px;
@@ -478,9 +488,12 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   .fokuszolas-page .fokuszolas-participants-head{
     grid-template-columns: 1fr;
   }
+  .fokuszolas-page .fokuszolas-participants-inner{
+    width: min(1020px, 100% - 32px);
+  }
   .fokuszolas-page .fokuszolas-participants .fokuszolas-image-participants{
     justify-self: end;
-    width: clamp(98px, 30vw, 132px);
+    width: clamp(120px, 36vw, 170px);
     margin-top: 8px;
   }
   .fokuszolas-page .fokuszolas-participants-quotes{
