@@ -220,7 +220,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .fokuszolas-page .fokuszolas-intro-copy{
   width: min(372px, 100%);
-  margin-left: clamp(92px, 9vw, 188px);
+  margin-left: clamp(220px, 13vw, 258px);
   margin-right: auto;
 }
 .fokuszolas-page .fokuszolas-intro-title{
