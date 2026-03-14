@@ -203,7 +203,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .fokuszolas-page .fokuszolas-intro{
   display: grid;
-  grid-template-columns: 59fr 30fr 11fr;
+  grid-template-columns: 66fr 23fr 11fr;
   min-height: clamp(250px, 27vw, 320px);
   width: 100vw;
   margin: 0 calc(50% - 50vw) 24px;
@@ -218,7 +218,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .fokuszolas-page .fokuszolas-intro-copy{
   width: min(372px, 100%);
-  margin-left: clamp(38px, 4vw, 86px);
+  margin-left: clamp(92px, 9vw, 188px);
   margin-right: auto;
 }
 .fokuszolas-page .fokuszolas-intro-title{
