@@ -1,0 +1,127 @@
+---
+import FullWidthLayout from "../layouts/FullWidthLayout.astro";
+
+const PORTRAIT_IMAGE =
+  "/wix_kepek/Meli_standing.jpg";
+const TOP_BAND_IMAGE =
+  "/wix_kepek/beech-3385957_1280.jpg";
+const COMMUNITY_IMAGE =
+  "/wix_kepek/IMG_5335.jpg";
+const COMMUNITY_TITLE_BG =
+  "/wix_kepek/White%20Sheet_edited_edited_edited_edited.jpg";
+
+const QUALIFICATIONS = [
+  {
+    year: "2007",
+    org: "ELTE ÁJK",
+    detail: "jogi diploma",
+  },
+  {
+    year: "2014",
+    org: "Pázmány Péter Katolikus Egyetem JÁK",
+    detail: "banki- és tőkepiaci szakjogász diploma",
+  },
+  {
+    year: "2023",
+    org: "Szomato-pszichoterápiás Egyesület",
+    detail: "fókusztréner",
+  },
+  {
+    year: "2025",
+    org: "Károli Gáspár Református Egyetem",
+    detail: "mentálhigiénés segítő szakember",
+  },
+  {
+    year: "folyamatban",
+    org: "Károli Gáspár Református Egyetem",
+    detail: "pszichológushallgató (folyamatban)",
+  },
+];
+---
+
+<FullWidthLayout title="Rólam">
+  <section class="melinda-page">
+    <div class="melinda-top-band" style={`--melinda-top-bg: url("${TOP_BAND_IMAGE}")`} aria-hidden="true"></div>
+
+    <section class="melinda-hero-wrap">
+      <div class="melinda-hero-card">
+        <div class="melinda-portrait">
+          <img src={PORTRAIT_IMAGE} alt="dr. Koskocsák Melinda" loading="eager" />
+        </div>
+
+        <div class="melinda-summary">
+          <h1>dr. Koskocsák Melinda</h1>
+
+          <ul class="melinda-roles">
+            <li>Mentálhigiénés szakember,</li>
+            <li>Pszichológushallgató (Károli Gáspár Református Egyetem),</li>
+            <li>Fókusztréner,</li>
+            <li>OH kártya instruktor</li>
+            <li>Jogász, volt polgári bíró</li>
+          </ul>
+
+          <div class="melinda-contact-mini">
+            <div><strong>Telefon:</strong></div>
+            <div>06 30 391 5306</div>
+            <div class="melinda-contact-gap"><strong>Email:</strong></div>
+            <div><a href="mailto:melinda.fokuszolas@gmail.com">melinda.fokuszolas@gmail.com</a></div>
+          </div>
+
+          <div class="melinda-social-mini">
+            <a href="https://www.facebook.com/profile.php?id=100091760217142" target="_blank" rel="noopener noreferrer">f</a>
+            <a href="https://www.linkedin.com/in/melinda-koskocs%C3%A1k-0b24b4113/" target="_blank" rel="noopener noreferrer">in</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="melinda-about">
+      <h2>Rólam</h2>
+      <p>
+        Korábban polgári vagyonjogi bíróként dolgoztam, ahol a jogszabályok keretei között hoztam a döntéseket az igazságosság jegyében. Egy
+        idő után azonban egyre jobban vágytam rá, hogy az ítélet helyét átvegye a megértés, a távolságot pedig a valódi találkozás váltsa fel.
+        Ne csupán jogi szempontból, hanem a közvetlen emberi kapcsolaton keresztül is jelen lehessek mások életében.
+      </p>
+      <p>
+        Mentálhigiénés segítőként, fókusztrénerként és OH-kártya instruktorként dolgozom. Kísérek egyéni folyamatokat és csoportokat vezetek,
+        ahol a fókuszolás és az OH-kártyák módszerei segítik az önismereti munkát. A személyközpontú, empatikus jelenlét különösen fontos
+        számomra - már nem választ el a "pulpitus", hanem valódi, támogató légkörben találkozom a hozzám fordulókkal.
+      </p>
+      <p>
+        Jelenleg a Károli Gáspár Református Egyetem pszichológushallgatója vagyok, ahol elmélyítem szakmai tudásomat és reflektív
+        szemléletemet. Két kisgyermek édesanyjaként az anyaság is meghatározó tapasztalat számomra, amely sokszor visszaköszön a segítői
+        munkámban.
+      </p>
+      <p>
+        Hiszek abban, hogy a kapcsolódásban rejlő figyelem, elfogadás és bizalom valóban gyógyító lehet - és nap mint nap ezt igyekszem
+        megteremteni a munkámban.
+      </p>
+    </section>
+
+    <section class="melinda-qualifications">
+      <h2>Végzettségeim</h2>
+      <ul class="melinda-qual-list">
+        {QUALIFICATIONS.map((item) => (
+          <li class="melinda-qual-item">
+            <div class="melinda-year">{item.year}</div>
+            <div class="melinda-degree">
+              <div class="melinda-degree-org">{item.org}</div>
+              <div class="melinda-degree-detail">{item.detail}</div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="melinda-community">
+      <div class="melinda-community-title" style={`--melinda-community-title-bg: url("${COMMUNITY_TITLE_BG}")`}>
+        <h2>Közösségi<br />Média</h2>
+        <div class="melinda-community-links">
+          <a href="https://www.facebook.com/profile.php?id=100091760217142" target="_blank" rel="noopener noreferrer">f</a>
+          <a href="https://www.linkedin.com/in/melinda-koskocs%C3%A1k-0b24b4113/" target="_blank" rel="noopener noreferrer">in</a>
+        </div>
+      </div>
+      <div class="melinda-community-image" style={`--melinda-community-bg: url("${COMMUNITY_IMAGE}")`} aria-hidden="true"></div>
+    </section>
+  </section>
+</FullWidthLayout>
