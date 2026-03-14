@@ -135,35 +135,38 @@ header{
 }
 @media (max-width: 760px){
   .nav{
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr auto;
     grid-template-areas:
-      "brand toggle"
-      "tagline tagline"
+      "brand . toggle"
+      "tagline tagline tagline"
       "links links";
-    padding: 18px 0 16px;
-    row-gap: 10px;
-    column-gap: 10px;
+    padding: 14px 0 14px;
+    row-gap: 8px;
+    column-gap: 8px;
+    align-items: center;
   }
   .brand{
-    font-size: 18px;
+    font-size: 22px;
     letter-spacing: 0.12em;
-    gap: 10px;
+    gap: 12px;
+    line-height: 1;
   }
   .brand img{
-    width: 34px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
   }
   .brand-tagline{
-    padding-left: 44px;
-    margin-top: 0;
-    font-size: 11px;
-    letter-spacing: 0.12em;
+    padding-left: 52px;
+    margin-top: 2px;
+    font-size: 14px;
+    letter-spacing: 0.14em;
   }
   .nav-toggle{
     display: inline-block;
     grid-area: toggle;
     justify-self: end;
     align-self: center;
+    margin-top: 0;
     position: relative;
     z-index: 25;
   }
@@ -1058,7 +1061,7 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   justify-self: center;
 }
 
-@media (max-width: 900px){
+@media (min-width: 761px) and (max-width: 900px){
   .nav{
     grid-template-columns: 1fr;
     grid-template-areas:
