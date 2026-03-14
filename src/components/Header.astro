@@ -24,7 +24,12 @@ const isActive = (href: string) => {
         <img src={logoUrl} alt="FókuszBAN logo" loading="eager" />
         <strong>FÓKUSZBAN</strong>
       </a>
-      <nav class="navlinks" aria-label="Fő navigáció">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menü megnyitása">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="navlinks" aria-label="Fő navigáció">
         {nav.map((item) => {
           const active = isActive(item.href);
           return (
@@ -38,3 +43,40 @@ const isActive = (href: string) => {
     </div>
   </div>
 </header>
+<div class="nav-backdrop" aria-hidden="true"></div>
+<script>
+  const navToggle = document.querySelector(".nav-toggle");
+  const siteNav = document.querySelector("#site-nav");
+  const navBackdrop = document.querySelector(".nav-backdrop");
+  if (navToggle && siteNav && navBackdrop) {
+    const closeMenu = () => {
+      navToggle.setAttribute("aria-expanded", "false");
+      navToggle.classList.remove("is-open");
+      siteNav.classList.remove("is-open");
+      navBackdrop.classList.remove("is-visible");
+      document.body.classList.remove("menu-open");
+    };
+    const openMenu = () => {
+      navToggle.setAttribute("aria-expanded", "true");
+      navToggle.classList.add("is-open");
+      siteNav.classList.add("is-open");
+      navBackdrop.classList.add("is-visible");
+      document.body.classList.add("menu-open");
+    };
+    navToggle.addEventListener("click", () => {
+      const expanded = navToggle.getAttribute("aria-expanded") === "true";
+      if (expanded) closeMenu();
+      else openMenu();
+    });
+    siteNav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
+    navBackdrop.addEventListener("click", closeMenu);
+    window.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeMenu();
+    });
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 760) closeMenu();
+    });
+  }
+</script>
