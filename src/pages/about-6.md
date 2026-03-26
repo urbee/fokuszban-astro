@@ -1,80 +1,51 @@
 ---
 layout: ../layouts/BaseLayout.astro
-title: "Szolgáltatás"
+title: "Mentálhigiénés segítő beszélgetés"
 ---
 
-# mentálhigiénés   segítő beszélgetés
+<section class="service-page">
+  <section class="service-hero">
+    <img
+      class="service-hero-image"
+      src="https://static.wixstatic.com/media/162124_ebdf5ec04f60479480bec76300a15a16~mv2.jpg/v1/crop/x_0,y_38,w_1064,h_851/fill/w_1000,h_420,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/beech-3385957_1280.jpg"
+      alt="Mentálhigiénés segítő beszélgetés"
+    />
+    <div class="service-hero-card">
+      <h1>Mentálhigiénés segítő beszélgetés</h1>
+      <p><strong>Időtartam:</strong> az első alkalom után szerződünk egy folyamatra</p>
+      <p><strong>Ár:</strong> 1 alkalom / 50 perc / 16.000 Ft</p>
+    </div>
+  </section>
 
-Időtartam: az első alkalom után szerződünk egy folyamatra
+  <section class="service-content">
+    <h2>Miről szól?</h2>
+    <p>
+      A segítő kapcsolat elfogadó terében lehetősége van a kliensnek, hogy jobban megértse önmagát és motivációit. Erőforrásait
+      mobilizálva képes legyen egy új egyensúlyt teremteni, mely által javul az életminősége.
+    </p>
+    <p>
+      Szemléletem része a nondirektivitás: nem adok tanácsot, nem vezetem a folyamatot, hanem kísérőként vagyok jelen. Kompetencia
+      határaimat betartva csak mentálisan egészséges felnőttekkel dolgozom.
+    </p>
 
-Ár: 1 alkalom/50perc/16.000Ft
+    <h3>Miben tudok segíteni?</h3>
+    <ul>
+      <li>önismereti témák, életvezetési kérdések</li>
+      <li>veszteségfeldolgozás</li>
+      <li>kapcsolati problémák</li>
+      <li>krízis</li>
+      <li>szakellátást nem igénylő szintű szorongás, stressz, hangulati panaszok</li>
+      <li>szülővé válás, szülői kifáradás</li>
+      <li>életközepi krízis</li>
+      <li>karrierváltással kapcsolatos nehézségek</li>
+    </ul>
 
-## Miről szól?
+    <h3>Milyen módszereket használok?</h3>
+    <ul>
+      <li>kliensközpontú segítő beszélgetés</li>
+      <li>OH-kártya</li>
+    </ul>
 
-A segítő kapcsolat elfogadó terében lehetősége van a kliensnek, hogy jobban megértse önmagát és motivációit. Erőforrásait mobilizálva képes legyen egy új egyensúlyt teremteni, mely által javul az életminősége.
-
-Szemléletem része a nondirektivitás: nem adok tanácsot, nem vezetem a folyamatot, hanem kísérőként vagyuok jelen. Kompetencia határaimat betartva csak mentálisan egészséges felnőttekkel dolgozom. Akiknek más típusú ellátásra van szükségük, azoknak igyekszem megfelelő szakembert találni.
-
-Miben tudok segíteni?
-
-- önismereti témák, életvezetési kérdések
-
-- veszteségfeldolgozás
-
-- kapcsolati problémák
-
-- krízis
-
-- szakellátást nem igénylő szintű szorongás, stressz, hangulati panaszok
-
-- szülővé válás, szülői kifáradás
-
-- életközepi krízis
-
-- karriervátlással kapcsolatos nehézségek
-
-
-Milyen módszereket használok?
-
-- kliensközpontú segítő beszélgetés
-
-
-- OH kártya
-
-
-A találkozások formája:személyes vagy online
-
-Kapcsolat
-
-és sajtó megjelenéssel kapcsolatos megkeresés
-
-Telefon: 06 30 391 5306
-
-Email: [melinda.fokuszolas@gmail.com](mailto:melinda.fokuszolas@gmail.com)
-
-- [![Facebook](/wix_kepek/0fdef751204647a3bbd7eaa2827ed4f9.avif)](https://www.facebook.com/profile.php?id=100091760217142)
-
-© 2025 Fókuszban. Minden jog fenntartva.
-
-[Adatvédelmi tájékoztató](https://c10483e2-6c52-48b4-a05b-6cd454d22ec2.filesusr.com/ugd/162124_02419251dc444c20a95828ee08d2e8ba.pdf)
-
-Név
-
-E-mail cím
-
-Tárgy
-
-Üzenet
-
-Küldés
-
-Köszönjük, hogy felvette velünk a kapcsolatot!
-
-bottom of page
-
-Ez a weboldal sütiket használ a felhasználói élmény javítása érdekében. A weboldalunk használatával Ön hozzájárul az összes süti használatához az Adatkezelési tájékoztatónknak megfelelően. [Adatkezelési tájékoztató](/about-6)
-
-További lehetőségekElfogadom
-
-
-
+    <p><strong>A találkozások formája:</strong> személyes vagy online.</p>
+  </section>
+</section>

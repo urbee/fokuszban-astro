@@ -1,57 +1,40 @@
 ---
 layout: ../layouts/BaseLayout.astro
-title: "Szolgáltatás"
+title: "Önismereti csoport a fókuszolás módszerével"
 ---
 
-# Önismereti csoport a fókuszolás módszerével
+<section class="service-page">
+  <section class="service-hero">
+    <img
+      class="service-hero-image"
+      src="https://static.wixstatic.com/media/162124_b1c5e9b6081547e09dacab5f0cf12bd7~mv2.jpg/v1/crop/x_107,y_0,w_1066,h_853/fill/w_1000,h_420,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nature-1157480_1280.jpg"
+      alt="Önismereti csoport a fókuszolás módszerével"
+    />
+    <div class="service-hero-card">
+      <h1>Önismereti csoport a fókuszolás módszerével</h1>
+      <p><strong>Forma:</strong> csoportos</p>
+      <p><strong>Részletek:</strong> az aktuális csoportok hirdetményében</p>
+    </div>
+  </section>
 
-Csoportos
-
-Részletek a [csoportok](/projects) hirdetményében
-
-## miről szól?
-
-A csoportban találkozhatsz olyan emberekkel, akik hasonló helyzeteket éltek meg, hasonló nehézségekkel küzdenek, mint Te, vagy épp a világnak egy Tőled eddig teljesen idegen szeletét képviselik. Biztonságos keretek között, az önismereti gyakorlatok és az élménymegosztások hatására megélheted, hogy nem vagy egyedül a problémáddal, érezheted a csoport támogató erejét. Megismerhetsz többféle perspektívát, olyanokat is, amire eddig még nem gondoltál. Kipróbálhatsz új viselkedésmintákat és begyakorolhatod ezeket egy védett közegben, ez növeli az önbizalmad és magabiztosabbá tesz.
-
-Eleinte teljesen érthető, ha tartasz attól, hogy egy csoporthoz csatlakozz. Nem könnyű az érzéseket, nehézségeket “idegenekkel” megosztani. Azonban megtapasztalhatod, hogy a csoport fejlődésével párhuzamosan egyre nő a bizalom a csoporttagok között és egyre könnyebb a többiek előtt megnyílni. Ebben is szert tehetsz egy rutinra, ami jövőbeli csoporthelyzeteidet (munkahelyi, baráti) is segíteni fogja.
-
-A [fókuszolás módszere](/fokuszolas) csoportban is elsajátítható. A fókuszfolyamatok és ezek feldolgozása (párban, kiscsoportban, rajzzal, írással)  mellett a mozgás, a zene, a rajz és a képek segítségével is kapcsolódhatsz önmagadhoz, a csoporthoz és kerülhetsz közelebb a fókuszoláshoz.
-
-​
-
-Aktuális csoportjainkról [itt](/projects) tájékozódhatsz.
-
-Kapcsolat
-
-és sajtó megjelenéssel kapcsolatos megkeresés
-
-Telefon: 06 30 391 5306
-
-Email: [melinda.fokuszolas@gmail.com](mailto:melinda.fokuszolas@gmail.com)
-
-- [![Facebook](/wix_kepek/0fdef751204647a3bbd7eaa2827ed4f9.avif)](https://www.facebook.com/profile.php?id=100091760217142)
-
-© 2025 Fókuszban. Minden jog fenntartva.
-
-[Adatvédelmi tájékoztató](https://c10483e2-6c52-48b4-a05b-6cd454d22ec2.filesusr.com/ugd/162124_02419251dc444c20a95828ee08d2e8ba.pdf)
-
-Név
-
-E-mail cím
-
-Tárgy
-
-Üzenet
-
-Küldés
-
-Köszönjük, hogy felvette velünk a kapcsolatot!
-
-bottom of page
-
-Ez a weboldal sütiket használ a felhasználói élmény javítása érdekében. A weboldalunk használatával Ön hozzájárul az összes süti használatához az Adatkezelési tájékoztatónknak megfelelően. [Adatkezelési tájékoztató](/about-6-2)
-
-További lehetőségekElfogadom
-
-
-
+  <section class="service-content">
+    <h2>Miről szól?</h2>
+    <p>
+      A csoportban találkozhatsz olyan emberekkel, akik hasonló helyzeteket éltek meg, hasonló nehézségekkel küzdenek, mint te, vagy épp a
+      világnak egy tőled eddig teljesen idegen szeletét képviselik.
+    </p>
+    <p>
+      Biztonságos keretek között, az önismereti gyakorlatok és az élménymegosztások hatására megélheted, hogy nem vagy egyedül a
+      problémáddal, érezheted a csoport támogató erejét, és többféle perspektívát ismerhetsz meg.
+    </p>
+    <p>
+      Eleinte teljesen érthető, ha tartasz attól, hogy egy csoporthoz csatlakozz. A csoport fejlődésével párhuzamosan azonban nő a bizalom, és
+      egyre könnyebb a többiek előtt megnyílni.
+    </p>
+    <p>
+      A <a href="/fokuszolas">fókuszolás módszere</a> csoportban is elsajátítható. A fókuszfolyamatok és ezek feldolgozása mellett a mozgás, a
+      zene, a rajz és a képek segítségével is kapcsolódhatsz önmagadhoz és a csoporthoz.
+    </p>
+    <p>Aktuális csoportjainkról <a href="/projects">itt</a> tájékozódhatsz.</p>
+  </section>
+</section>

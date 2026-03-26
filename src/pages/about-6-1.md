@@ -1,55 +1,33 @@
 ---
 layout: ../layouts/BaseLayout.astro
-title: "Szolgáltatás"
+title: "Fókuszolás tanítás"
 ---
 
-# fókuszolás tanítás
+<section class="service-page">
+  <section class="service-hero">
+    <img
+      class="service-hero-image"
+      src="https://static.wixstatic.com/media/162124_34b9af50c29c4803b61935e570feee6e~mv2.jpg/v1/crop/x_0,y_0,w_791,h_633/fill/w_1000,h_420,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/kapu_filter.jpg"
+      alt="Fókuszolás tanítás"
+    />
+    <div class="service-hero-card">
+      <h1>Fókuszolás tanítás</h1>
+      <p><strong>Időtartam:</strong> 8-10 alkalom</p>
+      <p><strong>Ár:</strong> 1 alkalom / 50 perc / 16.000 Ft</p>
+    </div>
+  </section>
 
-Időtartam: 8-10 alkalom
-
-Ár: 1 alkalom/50perc/16.000Ft
-
-## Miről szól?
-
-## ​
-
-Az alkalmakra a kliens egyéni tanulási ritmusához igazodva hozom a különböző fókuszgyakorlatokat.
-
-​
-
-A gyakorlatok elvégzése után az élmények megbeszélésére, feldolgozására kerül sor, melynek során a [fókuszolás](https://www.fokuszban.com/fokuszolas) módszerének elméleti hátterét is ismertetem. Sokszor tapasztaltam, hogy ebben a folyamatban fontos önismereti témák is megmutatkoznak, melyek mélyebb kibontására ebben a tanulási keretben nincs lehetőség. Ebben az esetben a folyamat végén javaslom a folytatást [mentálhigiénés segítő beszélgetés](https://www.fokuszban.com/about-6) formájában.
-
-Kapcsolat
-
-és sajtó megjelenéssel kapcsolatos megkeresés
-
-Telefon: 06 30 391 5306
-
-Email: [melinda.fokuszolas@gmail.com](mailto:melinda.fokuszolas@gmail.com)
-
-- [![Facebook](/wix_kepek/0fdef751204647a3bbd7eaa2827ed4f9.avif)](https://www.facebook.com/profile.php?id=100091760217142)
-
-© 2025 Fókuszban. Minden jog fenntartva.
-
-[Adatvédelmi tájékoztató](https://c10483e2-6c52-48b4-a05b-6cd454d22ec2.filesusr.com/ugd/162124_02419251dc444c20a95828ee08d2e8ba.pdf)
-
-Név
-
-E-mail cím
-
-Tárgy
-
-Üzenet
-
-Küldés
-
-Köszönjük, hogy felvette velünk a kapcsolatot!
-
-bottom of page
-
-Ez a weboldal sütiket használ a felhasználói élmény javítása érdekében. A weboldalunk használatával Ön hozzájárul az összes süti használatához az Adatkezelési tájékoztatónknak megfelelően. [Adatkezelési tájékoztató](/about-6-1)
-
-További lehetőségekElfogadom
-
-
-
+  <section class="service-content">
+    <h2>Miről szól?</h2>
+    <p>Az alkalmakra a kliens egyéni tanulási ritmusához igazodva hozom a különböző fókuszgyakorlatokat.</p>
+    <p>
+      A gyakorlatok elvégzése után az élmények megbeszélésére és feldolgozására kerül sor, melynek során a
+      <a href="/fokuszolas">fókuszolás</a> módszerének elméleti hátterét is ismertetem.
+    </p>
+    <p>
+      Sokszor tapasztaltam, hogy ebben a folyamatban fontos önismereti témák is megmutatkoznak, amelyek mélyebb kibontására ebben a tanulási
+      keretben nincs lehetőség. Ebben az esetben a folyamat végén javaslom a folytatást
+      <a href="/about-6">mentálhigiénés segítő beszélgetés</a> formájában.
+    </p>
+  </section>
+</section>
