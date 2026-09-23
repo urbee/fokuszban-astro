@@ -284,12 +284,16 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 }
 .site-footer-social{
   margin-top: 12px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
 }
 .site-footer-social a{
   font-size: 32px;
   line-height: 1;
   font-weight: 700;
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .site-footer-copy{
   margin-top: 18px;
