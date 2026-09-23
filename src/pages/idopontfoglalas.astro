@@ -1,0 +1,87 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { CAL_EMBED_URL } from "../config/booking";
+
+const calUrl = (CAL_EMBED_URL || "").trim();
+const hasCalEmbed = Boolean(calUrl);
+---
+
+<BaseLayout title="Időpontfoglalás">
+  <section class="service-page booking-page">
+    <section class="service-content booking-intro">
+      <h1>Időpontfoglalás</h1>
+      <p>
+        Ha úgy érzed, hogy szeretnél egy megtartó, elfogadó térben ránézni arra, ami most foglalkoztat, itt tudsz
+        időpontot választani egyéni mentálhigiénés segítő beszélgetésre.
+      </p>
+      <p><strong>Az alkalom időtartama:</strong> 50 perc</p>
+      <p><strong>Díja:</strong> 18 000 Ft / alkalom</p>
+      <p>Válaszd ki az alábbi naptárban a számodra megfelelő szabad időpontot.</p>
+      <p>
+        A foglalás elküldése önmagában még nem végleges időpont. A foglalás csak írásbeli elfogadás és megerősítés
+        után válik véglegessé; erről e-mailben kapsz visszajelzést.
+      </p>
+    </section>
+
+    <section class="booking-calendar" aria-label="Foglalási naptár">
+      <p class="booking-confirm-note">
+        Az alábbi naptárban kiválasztott időpont a foglalás elküldése után is csak írásbeli elfogadás és megerősítés
+        után válik véglegessé.
+      </p>
+      {hasCalEmbed ? (
+        <div class="booking-embed-wrap">
+          <iframe
+            class="booking-embed"
+            src={calUrl}
+            title="Időpontfoglalás – Cal.com"
+            loading="lazy"
+            allow="camera; microphone; fullscreen"
+          />
+        </div>
+      ) : (
+        <div class="booking-placeholder">
+          <p>
+            A foglalási naptár hamarosan elérhető lesz. Addig időpontot e-mailben is egyeztethetsz:
+            <a href="mailto:melinda.fokuszolas@gmail.com">melinda.fokuszolas@gmail.com</a>
+          </p>
+          <p class="booking-placeholder-note">
+            (Fejlesztőknek: a Cal.com event URL-t a <code>src/config/booking.ts</code> fájlban vagy a
+            <code>PUBLIC_CAL_EMBED_URL</code> környezeti változóban kell megadni.)
+          </p>
+        </div>
+      )}
+    </section>
+
+    <section class="service-content">
+      <h2>Első alkalom</h2>
+      <p>
+        Ha most jelentkezel először, nincs szükség külön felkészülésre. Az első találkozás során megbeszéljük, mivel
+        érkezel, és azt is, hogy a mentálhigiénés segítő beszélgetés megfelelő keretet jelent-e számodra.
+      </p>
+      <p>
+        A mentálhigiénés segítő beszélgetés nem pszichoterápia és nem egészségügyi ellátás. A közös munka középpontjában
+        a jelenlegi élethelyzeted, az önmagadhoz és másokhoz való kapcsolódás, valamint saját erőforrásaid és
+        lehetőségeid állnak.
+      </p>
+
+      <h2>Lemondás és időpont-módosítás</h2>
+      <p>
+        Ha a lefoglalt időpont mégsem megfelelő, kérlek, lehetőség szerint legalább 48 órával korábban jelezd.
+      </p>
+      <p>
+        A 48 órán belül lemondott vagy le nem mondott alkalom díja fizetendő, kivéve rendkívüli, előre nem látható
+        helyzet esetén.
+      </p>
+
+      <h2>Adatkezelés</h2>
+      <p>
+        A foglaláshoz csak az időpont egyeztetéséhez szükséges alapadatokat kérem. Kérlek, a foglalási felületen ne írj
+        részletes egészségügyi vagy más érzékeny személyes információt.
+      </p>
+      <p>
+        A foglalással kapcsolatos adatkezelés részleteit az
+        <a href="/adatvedelem">Adatkezelési tájékoztatóban</a> találod.
+      </p>
+    </section>
+  </section>
+</BaseLayout>

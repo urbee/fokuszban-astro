@@ -18,6 +18,14 @@ vinni a változtatást Cursortól az éles `fokuszban.com` oldalig.
 - Új képeket a `public/images` mappába érdemes tenni.
 - Az oldalakat a `src/pages` mappában találod. Például a kezdőlap:
   `src/pages/index.astro`.
+- Időpontfoglalás oldal: `src/pages/idopontfoglalas.astro`. A Cal.com
+  beágyazási URL-t a `src/config/booking.ts` fájlban (vagy a
+  `PUBLIC_CAL_EMBED_URL` környezeti változóban) kell megadni, miután
+  Melinda létrehozta a Cal.com eventet.
+- Google Analytics: a Measurement ID-t a Netlify
+  **Site settings → Environment variables** menüjében add meg
+  `PUBLIC_GA_MEASUREMENT_ID` néven (pl. `G-XXXXXXXXXX`). A kód a layoutokban
+  van; ha a változó nincs beállítva, a script nem töltődik be.
 
 ## 2. Helyi ellenőrzés
 
