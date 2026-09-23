@@ -405,6 +405,57 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   font-size: clamp(15px, 1.15vw, 18px);
   line-height: 1.62;
 }
+.prose .service-hero-card .service-book-btn{
+  margin-top: 14px;
+}
+.prose .service-book-footer{
+  margin-top: 28px;
+  margin-bottom: 0;
+}
+.prose .booking-page .booking-intro h1{
+  margin: 0 0 14px;
+  color: #1f2c30;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: clamp(28px, 3vw, 42px);
+}
+.prose .booking-calendar{
+  margin: 0;
+  padding: clamp(18px, 2.5vw, 28px) clamp(16px, 3.6vw, 50px);
+  background: #f4f6f7;
+}
+.prose .booking-embed-wrap{
+  width: 100%;
+  min-height: 720px;
+  border: 1px solid #d5d9dc;
+  background: #fff;
+}
+.prose .booking-embed{
+  display: block;
+  width: 100%;
+  min-height: 720px;
+  height: 80vh;
+  border: 0;
+}
+.prose .booking-placeholder{
+  padding: clamp(22px, 3vw, 36px);
+  background: #fff;
+  border: 1px solid #d8dcde;
+}
+.prose .booking-placeholder p{
+  margin: 0 0 12px;
+  font-size: clamp(15px, 1.15vw, 18px);
+  line-height: 1.72;
+  color: #1e2325;
+}
+.prose .booking-placeholder-note{
+  font-size: 13px !important;
+  color: #5a6468 !important;
+}
+.prose .booking-placeholder code{
+  font-size: 0.92em;
+}
 @media (max-width: 760px){
   .prose .service-hero-image{
     height: 210px;
