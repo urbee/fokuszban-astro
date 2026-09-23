@@ -273,6 +273,15 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+.site-footer-contact .site-footer-book-btn{
+  display: inline-block;
+  margin-top: 14px;
+  text-decoration: none;
+}
+.site-footer-contact .site-footer-book-note{
+  margin-top: 10px;
+  max-width: 28rem;
+}
 .site-footer-social{
   margin-top: 12px;
 }
@@ -408,9 +417,28 @@ footer{ border-top:1px solid var(--border); padding: 22px 0; color: var(--muted)
 .prose .service-hero-card .service-book-btn{
   margin-top: 14px;
 }
+.prose .service-book-note{
+  display: block;
+  margin: 10px 0 0;
+  font-size: clamp(13px, 1.05vw, 15px);
+  line-height: 1.45;
+  color: #4a5558;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
 .prose .service-book-footer{
   margin-top: 28px;
   margin-bottom: 0;
+}
+.prose .service-book-footer .service-book-note{
+  margin-top: 12px;
+}
+.prose .booking-confirm-note{
+  margin: 0 0 14px;
+  font-size: clamp(14px, 1.1vw, 16px);
+  line-height: 1.55;
+  color: #1e2325;
 }
 .prose .booking-page .booking-intro h1{
   margin: 0 0 14px;

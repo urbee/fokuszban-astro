@@ -18,12 +18,16 @@ const hasCalEmbed = Boolean(calUrl);
       <p><strong>Díja:</strong> 18 000 Ft / alkalom</p>
       <p>Válaszd ki az alábbi naptárban a számodra megfelelő szabad időpontot.</p>
       <p>
-        A foglalás elküldése után visszaigazoló e-mailt kapsz. Kérlek, vedd figyelembe, hogy az időpont a
-        visszaigazolást követően válik véglegessé.
+        A foglalás elküldése önmagában még nem végleges időpont. A foglalás csak írásbeli elfogadás és megerősítés
+        után válik véglegessé; erről e-mailben kapsz visszajelzést.
       </p>
     </section>
 
     <section class="booking-calendar" aria-label="Foglalási naptár">
+      <p class="booking-confirm-note">
+        Az alábbi naptárban kiválasztott időpont a foglalás elküldése után is csak írásbeli elfogadás és megerősítés
+        után válik véglegessé.
+      </p>
       {hasCalEmbed ? (
         <div class="booking-embed-wrap">
           <iframe

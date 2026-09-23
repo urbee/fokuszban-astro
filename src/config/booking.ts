@@ -13,4 +13,6 @@
  * - Kérdések: név, e-mail, telefon, első/visszatérő, személyesen/online, adatkezelés elfogadása
  * - Nincs szabad szöveges problémaleírás mező
  */
-export const CAL_EMBED_URL: string = import.meta.env.PUBLIC_CAL_EMBED_URL ?? "";
+export const CAL_EMBED_URL: string =
+  import.meta.env.PUBLIC_CAL_EMBED_URL ??
+  "https://cal.com/melinda-koskocsak-zuyfcf/mentalhigienies-segito-beszelgetes";
