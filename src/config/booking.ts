@@ -10,6 +10,7 @@
  * - Min. notice 24 óra, előre 6 hét, napi max 5
  * - Requires confirmation: ON
  * - Timezone: Europe/Budapest
+ * - Helyszín (Cal.com Location): személyesen (Budapest, XIII. kerület) — PszichoFészek / utcanév nélkül
  * - Kérdések: név, e-mail, telefon, első/visszatérő, személyesen/online, adatkezelés elfogadása
  * - Nincs szabad szöveges problémaleírás mező
  */
